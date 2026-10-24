@@ -1,0 +1,57 @@
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+Full catalog 2021-07-26: 24 queries, 156,596 candidates
+Full catalog 2021-07-27: 27 queries, 176,615 candidates
+Full catalog 2021-07-28: 28 queries, 183,557 candidates
+Full catalog 2021-07-29: 34 queries, 223,256 candidates
+Full catalog 2021-07-30: 33 queries, 217,464 candidates
+Full catalog 2021-07-31: 31 queries, 204,611 candidates
+Full catalog 2021-08-01: 33 queries, 218,551 candidates
+[
+  {
+    "variant": "manual",
+    "queries": 210,
+    "ndcg@5": 0.14550551668091924,
+    "recall@5": 0.1968253968253968,
+    "ndcg@10": 0.16744843134693746,
+    "recall@10": 0.26195011337868485,
+    "ndcg@20": 0.1919390911908899,
+    "recall@20": 0.35128117913832196,
+    "mrr": 0.16142651280147288
+  },
+  {
+    "variant": "automatic",
+    "queries": 210,
+    "ndcg@5": 0.12791599183890467,
+    "recall@5": 0.1841269841269841,
+    "ndcg@10": 0.15675673226807704,
+    "recall@10": 0.27012471655328796,
+    "ndcg@20": 0.17931418657253947,
+    "recall@20": 0.353140589569161,
+    "mrr": 0.14411954043965916
+  },
+  {
+    "variant": "all_automatic",
+    "queries": 210,
+    "ndcg@5": 0.12930949354518034,
+    "recall@5": 0.1880952380952381,
+    "ndcg@10": 0.16144285377284087,
+    "recall@10": 0.28730158730158734,
+    "ndcg@20": 0.18331721887600844,
+    "recall@20": 0.36448979591836733,
+    "mrr": 0.14512807223137295
+  },
+  {
+    "variant": "popularity_7d",
+    "queries": 210,
+    "ndcg@5": 0.13707058250178317,
+    "recall@5": 0.18905895691609975,
+    "ndcg@10": 0.17723743508726122,
+    "recall@10": 0.31064625850340133,
+    "ndcg@20": 0.2063591655664801,
+    "recall@20": 0.4195351473922902,
+    "mrr": 0.16474285558752227
+  }
+]

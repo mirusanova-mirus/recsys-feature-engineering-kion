@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "cache provenance",
+    "strict temporal history",
+    "nonoverlapping splits",
+    "no forbidden features",
+    "unique candidates",
+    "negative count",
+    "recomputed ensemble metrics",
+    "sealed audit checksum",
+    "full-catalog subset size",
+    "model feature names",
+    "SkipTest categorical counters",
+    "model seeds"
+  ]
+}

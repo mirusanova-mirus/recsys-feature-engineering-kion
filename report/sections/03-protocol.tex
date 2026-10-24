@@ -1,0 +1,72 @@
+% Этот текст можно свободно редактировать.
+\FloatBarrier
+\section{Временной протокол и кандидаты}
+
+\FloatBarrier
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\setlength{\reporttablewidth}{\dimexpr\linewidth-24pt\relax}
+\renewcommand{\arraystretch}{1.15}
+\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.16194\reporttablewidth}>{\raggedright\arraybackslash}p{0.35223\reporttablewidth}>{\raggedright\arraybackslash}p{0.16194\reporttablewidth}>{\raggedright\arraybackslash}p{0.16194\reporttablewidth}>{\raggedright\arraybackslash}p{0.16194\reporttablewidth}@{}}
+\caption{Временной протокол и кандидаты}\label{tab:results-1}\\
+\toprule
+\textbf{Часть} & \textbf{Даты, правая граница исключена} & \textbf{Запросы} & \textbf{Пользователи} & \textbf{Строки кандидатов} \\
+\midrule
+\endfirsthead
+\multicolumn{5}{l}{\small\itshape Продолжение таблицы \thetable}\\
+\toprule
+\textbf{Часть} & \textbf{Даты, правая граница исключена} & \textbf{Запросы} & \textbf{Пользователи} & \textbf{Строки кандидатов} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\footnotesize Продолжение на следующей странице}\\
+\endfoot
+\bottomrule
+\endlastfoot
+train & [2021-07-05, 2021-08-02) & 25478 & 11072 & 1313062 \\
+search & [2021-08-02, 2021-08-09) & 7382 & 4724 & 380968 \\
+confirm & [2021-08-09, 2021-08-16) & 7605 & 4889 & 392397 \\
+test & [2021-08-16, 2021-08-23) & 7978 & 5126 & 411868 \\
+\end{longtable}
+\endgroup
+
+Все более ранние события остаются прогревочной историей. Признаки для даты t используют строго \code{event.date < t}; окно w --- \texttt{[t\ensuremath{-}w,t)}. Внутри дня порядок неизвестен, поэтому события этого дня не используются даже для более поздних кандидатов. Модели учатся только на train. Search применяется для early stopping, выбора гиперпараметров и признаков. Confirm --- отдельная проверка выбранных решений. Test открывается в \code{experiment.py} после сохранения \code{selection.lock.json}; тестовые метрики не участвуют в выборе.
+
+Протокол последовательный: после завершения дня его события становятся доступной историей следующего дня. Это относится и к валидации, и к тесту. Веса модели при этом фиксированы; переобучения на тестовых метках нет. Нельзя интерпретировать эту оценку как один прогноз всего тестового интервала из единственного снимка до его начала.
+
+Каталог дня состоит только из объектов, хотя бы раз наблюдавшихся \textbf{до t у выбранных пользователей}. Положительные объекты вне каталога исключаются, доля покрытия приведена ниже. Уже виденные пользователем объекты исключаются из выдачи. Для каждого запроса добавляется 50 уникальных контролей: половина равномерно, половина с весами \code{past_item_count**0.75}, без возвращения. Положительные и отрицательные объекты перемешиваются. Seed генератора = 107, он зависит также от даты. Все модели получают одни и те же строки; контрольные SHA-256 каждого split записаны в \code{audit.json}.
+
+Сегодняшние положительные объекты исключаются из контролей по определению разметки. \textbf{Будущие положительные взаимодействия не исключаются}: такое исключение дало бы кандидату информацию из будущего. Кандидаты и метки на тесте создаются офлайн до обучения; код выбора моделей не читает эти таблицы до фиксации решения.
+
+\FloatBarrier
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\setlength{\reporttablewidth}{\dimexpr\linewidth-30pt\relax}
+\renewcommand{\arraystretch}{1.15}
+\footnotesize
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.16667\reporttablewidth}>{\raggedright\arraybackslash}p{0.16667\reporttablewidth}>{\raggedright\arraybackslash}p{0.16667\reporttablewidth}>{\raggedright\arraybackslash}p{0.16667\reporttablewidth}>{\raggedright\arraybackslash}p{0.16667\reporttablewidth}>{\raggedright\arraybackslash}p{0.16667\reporttablewidth}@{}}
+\caption{Временной протокол и кандидаты}\label{tab:results-2}\\
+\toprule
+\textbf{Часть} & \textbf{Все цели} & \textbf{Оценённые цели} & \textbf{Объект ещё неизвестен} & \textbf{Повтор пары} & \textbf{Покрытие целей} \\
+\midrule
+\endfirsthead
+\multicolumn{6}{l}{\small\itshape Продолжение таблицы \thetable}\\
+\toprule
+\textbf{Часть} & \textbf{Все цели} & \textbf{Оценённые цели} & \textbf{Объект ещё неизвестен} & \textbf{Повтор пары} & \textbf{Покрытие целей} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r}{\footnotesize Продолжение на следующей странице}\\
+\endfoot
+\bottomrule
+\endlastfoot
+train & 40120 & 39162 & 958 & 0 & 97.61\% \\
+search & 12192 & 11868 & 324 & 0 & 97.34\% \\
+confirm & 12444 & 12147 & 297 & 0 & 97.61\% \\
+test & 13224 & 12968 & 256 & 0 & 98.06\% \\
+\end{longtable}
+\endgroup
+
+Метрики условны на оценённых целях. Исключённым холодным объектам не приписывается нулевой score, поэтому это не end-to-end recall по всем исходным событиям. Весь eligible daily target set включается в кандидаты, и candidate recall внутри определённой задачи равен 1 по построению.
+

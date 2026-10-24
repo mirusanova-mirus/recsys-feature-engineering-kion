@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+data/raw/
+data/processed/
+data/independent/
+artifacts/cache/
+artifacts/models/
+artifacts/predictions/
+artifacts/archive/
+artifacts/*/cache/
+artifacts/*/models/
+artifacts/*/predictions/
+*.egg-info/
+tmp/
+
+
+# Generated bundles, editor files and preserved reproduction snapshots
+submission/
+.DS_Store
+*.swp
+artifacts/reference_*/

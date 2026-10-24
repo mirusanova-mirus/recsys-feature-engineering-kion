@@ -1,0 +1,36 @@
+{
+  "pages": 9,
+  "text_characters_by_page": [
+    1743,
+    2013,
+    1776,
+    1733,
+    1734,
+    1641,
+    1727,
+    2133,
+    2195
+  ],
+  "unicode_replacement_characters": 0,
+  "visual_review": {
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "render_scale_pixels": 1300,
+    "layout_issues": 0,
+    "checks": [
+      "tables and text fit page margins",
+      "no overlaps or clipped content",
+      "embedded Cyrillic fonts readable",
+      "page numbering and footers intact"
+    ]
+  }
+}

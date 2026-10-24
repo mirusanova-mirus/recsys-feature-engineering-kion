@@ -1,0 +1,99 @@
+% Этот текст можно свободно редактировать.
+\FloatBarrier
+\section{Стоимость и масштабирование}
+
+Построение четырёх основных таблиц и uniform test заняло \textbf{114.3 с}. Суммарное измеренное время fit всех 26 артефактов моделей --- \textbf{62.6 мин}. Пиковый RSS основного процесса эксперимента --- \textbf{4021 МиБ} (показатель процесса, не всей машины). Платформа: \code{macOS-15.5-arm64-arm-64bit}, CPU, 6 потоков на одно обучение. Версии пакетов и Python --- \code{environment.json}. Время зависит от нагрузки компьютера; это локальные измерения, а не универсальный benchmark. В выполненном запуске две независимые абляции предварительно обучались параллельно с другими seed при тех же параметрах; суммарный RSS всех процессов не измерялся. Сумма индивидуальных времён fit при таком расписании не равна общему времени ожидания; стандартный \code{make reproduce} выполняет этапы последовательно.
+
+\FloatBarrier
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\setlength{\reporttablewidth}{\dimexpr\linewidth-12pt\relax}
+\renewcommand{\arraystretch}{1.15}
+\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.35310\reporttablewidth}>{\raggedright\arraybackslash}p{0.32345\reporttablewidth}>{\raggedright\arraybackslash}p{0.32345\reporttablewidth}@{}}
+\caption{Стоимость и масштабирование}\label{tab:results-9}\\
+\toprule
+\textbf{Этап} & \textbf{Обучений} & \textbf{Суммарное время fit, с} \\
+\midrule
+\endfirsthead
+\multicolumn{3}{l}{\small\itshape Продолжение таблицы \thetable}\\
+\toprule
+\textbf{Этап} & \textbf{Обучений} & \textbf{Суммарное время fit, с} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{\footnotesize Продолжение на следующей странице}\\
+\endfoot
+\bottomrule
+\endlastfoot
+Подбор базовой модели & 3 & 601.4 \\
+Поиск признаков & 13 & 827.5 \\
+Контроль поиска & 1 & 52.2 \\
+Финальные модели и абляции & 9 & 2274.8 \\
+\end{longtable}
+\endgroup
+
+\FloatBarrier
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\setlength{\reporttablewidth}{\dimexpr\linewidth-24pt\relax}
+\renewcommand{\arraystretch}{1.15}
+\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.23810\reporttablewidth}>{\raggedright\arraybackslash}p{0.19048\reporttablewidth}>{\raggedright\arraybackslash}p{0.19048\reporttablewidth}>{\raggedright\arraybackslash}p{0.19048\reporttablewidth}>{\raggedright\arraybackslash}p{0.19048\reporttablewidth}@{}}
+\caption{Стоимость и масштабирование}\label{tab:results-10}\\
+\toprule
+\textbf{Модель, seed 42} & \textbf{Признаки} & \textbf{Деревья} & \textbf{Fit, с} & \textbf{Размер, МиБ} \\
+\midrule
+\endfirsthead
+\multicolumn{5}{l}{\small\itshape Продолжение таблицы \thetable}\\
+\toprule
+\textbf{Модель, seed 42} & \textbf{Признаки} & \textbf{Деревья} & \textbf{Fit, с} & \textbf{Размер, МиБ} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\footnotesize Продолжение на следующей странице}\\
+\endfoot
+\bottomrule
+\endlastfoot
+Ручные признаки & 48 & 450 & 157.6 & 16.40 \\
+Автоотбор & 74 & 449 & 229.6 & 12.76 \\
+Весь банк признаков & 128 & 449 & 281.7 & 8.66 \\
+\end{longtable}
+\endgroup
+
+Идентичные обучения переиспользуются по полному набору признаков, гиперпараметрам, seed и числу итераций. В таблице моделей приведена стоимость первичного fit; в суммарном бюджете повторная загрузка считается как 0 секунд fit. Это не усечение деревьев и не приближённая замена обучения.
+
+Однодневный микробенчмарк на 31.07.2021, один повтор. Во всех строках сохранены целиком истории вложенных случайных выборок пользователей, включая пользователей без активности в этот день. Размер DataFrame включает все служебные колонки и строки Python, а не только матрицу признаков. Это логическая оценка \code{memory_usage(deep=True)}, которая может повторно учитывать разделяемые строки; она не равна физическому RSS.
+
+\FloatBarrier
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\setlength{\reporttablewidth}{\dimexpr\linewidth-36pt\relax}
+\renewcommand{\arraystretch}{1.15}
+\footnotesize
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.14286\reporttablewidth}>{\raggedright\arraybackslash}p{0.14286\reporttablewidth}>{\raggedright\arraybackslash}p{0.14286\reporttablewidth}>{\raggedright\arraybackslash}p{0.14286\reporttablewidth}>{\raggedright\arraybackslash}p{0.14286\reporttablewidth}>{\raggedright\arraybackslash}p{0.14286\reporttablewidth}>{\raggedright\arraybackslash}p{0.14286\reporttablewidth}@{}}
+\caption{Стоимость и масштабирование}\label{tab:results-11}\\
+\toprule
+\textbf{Пользо\-ватели} & \textbf{Сохра\-нённые события} & \textbf{Запросы в день} & \textbf{Кандидаты} & \textbf{Кандидаты, с} & \textbf{Все признаки, с} & \textbf{DataFrame, МиБ} \\
+\midrule
+\endfirsthead
+\multicolumn{7}{l}{\small\itshape Продолжение таблицы \thetable}\\
+\toprule
+\textbf{Пользо\-ватели} & \textbf{Сохра\-нённые события} & \textbf{Запросы в день} & \textbf{Кандидаты} & \textbf{Кандидаты, с} & \textbf{Все признаки, с} & \textbf{DataFrame, МиБ} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{7}{r}{\footnotesize Продолжение на следующей странице}\\
+\endfoot
+\bottomrule
+\endlastfoot
+1000 & 5617 & 34 & 1745 & 0.02 & 0.13 & 2.2 \\
+10000 & 56605 & 347 & 17912 & 0.19 & 0.53 & 22.8 \\
+30000 & 169946 & 1082 & 55860 & 0.60 & 1.35 & 71.2 \\
+\end{longtable}
+\endgroup
+
+Эта эталонная реализация на pandas повторно группирует предшествующую историю для каждого дня и окна. При D днях, H прошлых событиях и F агрегатах стоимость включает примерно O(D\ensuremath{\cdot}F\ensuremath{\cdot}H), плюс заполнение признаков O(Q\ensuremath{\cdot}C\ensuremath{\cdot}F), где Q --- число запросов, C --- число кандидатов. Текущий генератор контролей дополнительно просматривает каталог размера I, то есть имеет член O(Q\ensuremath{\cdot}I). На практике константы зависят от отношений и токенов. Реализация \textbf{не готова к миллиардам событий}. Для промышленного масштаба нужны инкрементальные счётчики, очереди удаления событий из окон, состояния экспоненциальных сумм, партиционированные SQL/streaming-агрегации и ограниченный retrieval до ранжирования. Автоотбор снижает число входов относительно полного банка, но исходный поиск пока требует всего банка. Экстраполяция времени на миллиарды событий не проводится.
+
+Инференс измерен отдельно в \code{inference.json}: секунды на 100 000 строк включают выбор колонок, обработку категорий и \code{predict_proba}, но не построение истории. Полный каталог обрабатывается по дням; отдельно записаны время его признаков и инференса шести моделей. Сравнивать только fit без стоимости поиска было бы некорректно.
+

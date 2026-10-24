@@ -1,0 +1,9 @@
+{
+  "platform": "macOS-15.5-arm64-arm-64bit",
+  "wall_seconds": 1739.1671637499999,
+  "total_new_fit_seconds": 1476.537519333,
+  "logical_fits": 18,
+  "new_fits": 9,
+  "peak_rss_mib": 3605.28125,
+  "schedule": "One training process for supplements; the separate temporal replication may run concurrently. Thread count per fit 6."
+}

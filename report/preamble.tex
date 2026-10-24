@@ -1,0 +1,40 @@
+% Общие настройки оформления. Для текста отчёта откройте sections/.
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage{cmap}
+  \usepackage[T2A]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else
+  % Локальные шрифты делают XeLaTeX/предпросмотр независимым от системных шрифтов.
+  \usepackage{fontspec}
+  \setmainfont[Path=fonts/,BoldFont=DejaVuSerif-Bold.ttf,ItalicFont=DejaVuSerif-Italic.ttf,BoldItalicFont=DejaVuSerif-BoldItalic.ttf]{DejaVuSerif.ttf}
+  \setsansfont[Path=fonts/,BoldFont=DejaVuSans-Bold.ttf]{DejaVuSans.ttf}
+  \setmonofont[Path=fonts/,BoldFont=DejaVuSansMono-Bold.ttf]{DejaVuSansMono.ttf}
+\fi
+\usepackage[english,russian]{babel}
+\usepackage[a4paper,left=23mm,right=23mm,top=23mm,bottom=24mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,longtable,array}
+\usepackage{xcolor,caption,enumitem,fancyhdr}
+\usepackage{microtype}
+\usepackage{placeins}
+\PassOptionsToPackage{spaces,obeyspaces}{url}
+\usepackage{xurl}
+\usepackage[unicode,breaklinks=true]{hyperref}
+\definecolor{reportnavy}{HTML}{163047}
+\definecolor{reportteal}{HTML}{087E8B}
+\hypersetup{colorlinks=true,linkcolor=reportnavy,urlcolor=reportteal,citecolor=reportteal}
+\urlstyle{same}
+\DeclareRobustCommand{\code}[1]{{\small\ttfamily\nolinkurl{#1}}}
+\newlength{\reporttablewidth}
+\setlength{\parindent}{1.25em}
+\setlength{\parskip}{3pt}
+\linespread{1.07}
+\setlength{\emergencystretch}{2em}
+\setcounter{tocdepth}{2}
+\setlist{nosep,topsep=5pt}
+\captionsetup{font=small,labelfont=bf}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\reportshorttitle}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}

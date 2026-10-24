@@ -1,0 +1,58 @@
+{
+  "config": {
+    "data_dir": "data/independent",
+    "output_dir": "artifacts/independent",
+    "end_exclusive": "2021-08-23",
+    "train_days": 28,
+    "search_days": 7,
+    "confirmation_days": 7,
+    "test_days": 7,
+    "train_negatives": 50,
+    "eval_negatives": 50,
+    "uniform_fraction": 0.5,
+    "candidate_seed": 107,
+    "model_seeds": [
+      42,
+      43,
+      44
+    ],
+    "iterations": 450,
+    "search_iterations": 180,
+    "learning_rate": 0.08,
+    "threads": 2,
+    "bootstrap_reps": 2000,
+    "full_catalog_queries": 210,
+    "grid": [
+      {
+        "depth": 6,
+        "l2_leaf_reg": 3
+      }
+    ],
+    "max_auto_groups": 3,
+    "min_search_gain": 0.0005,
+    "enabled_variants": [
+      "manual",
+      "automatic",
+      "all_automatic"
+    ],
+    "repeat_variants": [
+      "manual",
+      "automatic",
+      "all_automatic"
+    ],
+    "catalog_variants": [
+      "manual",
+      "automatic",
+      "all_automatic"
+    ],
+    "cohort_users": 5000,
+    "cohort_seed": 2027,
+    "exclude_users": "data/processed/sampled_users.csv"
+  },
+  "excluded_users_sha256": "d15e34002369e1197cfddfc654e4a25fb7f03c6fd23bde06cce290ff25deb6df",
+  "source_manifest_sha256": "56c7633d52882f73a156b3e9e164ce9b448ea2713d30834e1fc14719a2d00f5e",
+  "sampling_policy": "Uniform 5000 users from the complement of the initial 30000; no event/activity screening.",
+  "evaluation_policy": "Original temporal split, new-cohort histories only, full selector repeated, three seeds per variant, frozen hyperparameters transferred from the original cohort. Catalog is secondary, no tuning on test.",
+  "comparison": "automatic vs manual, and bank vs manual/automatic, user-cluster bootstrap; all are supplemental, not replacements for the original primary test.",
+  "created_utc": "2026-10-24T07:40:26.474801+00:00"
+}

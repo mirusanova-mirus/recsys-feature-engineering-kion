@@ -1,0 +1,22 @@
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+{
+  "passed": true,
+  "checks": [
+    "original sealed hashes unchanged",
+    "18 factorial cells and exact model hashes",
+    "three matching seeds and training caps",
+    "same feature sets, depth, regularization and SkipTest",
+    "original bank seed42 predictions unchanged",
+    "three-seed ensembles recomputed",
+    "bootstrap recomputed",
+    "budget interaction recomputed",
+    "nonoverlapping temporal test weeks",
+    "same complete user histories",
+    "replication parameters frozen",
+    "replication audit passed",
+    "identical original catalog query subset and reference metrics"
+  ]
+}

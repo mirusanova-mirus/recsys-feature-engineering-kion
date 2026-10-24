@@ -1,0 +1,46 @@
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+Full catalog 2021-08-16: 24 queries, 169,590 candidates
+Full catalog 2021-08-17: 26 queries, 184,516 candidates
+Full catalog 2021-08-18: 28 queries, 199,360 candidates
+Full catalog 2021-08-19: 33 queries, 236,007 candidates
+Full catalog 2021-08-20: 34 queries, 244,213 candidates
+Full catalog 2021-08-21: 30 queries, 215,944 candidates
+Full catalog 2021-08-22: 35 queries, 252,792 candidates
+[
+  {
+    "variant": "manual",
+    "queries": 210,
+    "ndcg@5": 0.07943058384977211,
+    "recall@5": 0.11190476190476191,
+    "ndcg@10": 0.0987511127237361,
+    "recall@10": 0.16825396825396824,
+    "ndcg@20": 0.1120077740838561,
+    "recall@20": 0.2206349206349206,
+    "mrr": 0.09760525618653448
+  },
+  {
+    "variant": "automatic",
+    "queries": 210,
+    "ndcg@5": 0.07981667376884301,
+    "recall@5": 0.1092857142857143,
+    "ndcg@10": 0.1033151660315431,
+    "recall@10": 0.1787301587301587,
+    "ndcg@20": 0.11503445500235303,
+    "recall@20": 0.22158730158730158,
+    "mrr": 0.105220284247517
+  },
+  {
+    "variant": "popularity_7d",
+    "queries": 210,
+    "ndcg@5": 0.12460391599689921,
+    "recall@5": 0.16428571428571428,
+    "ndcg@10": 0.14846691858391395,
+    "recall@10": 0.2329365079365079,
+    "ndcg@20": 0.16319164155889365,
+    "recall@20": 0.28531746031746036,
+    "mrr": 0.14460812703353715
+  }
+]

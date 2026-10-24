@@ -1,0 +1,22 @@
+{
+  "data_dir": "data/processed",
+  "output_dir": "artifacts/main",
+  "train_days": 28,
+  "search_days": 7,
+  "confirmation_days": 7,
+  "test_days": 7,
+  "train_negatives": 50,
+  "eval_negatives": 50,
+  "uniform_fraction": 0.5,
+  "candidate_seed": 107,
+  "model_seeds": [42, 43, 44],
+  "iterations": 450,
+  "search_iterations": 180,
+  "learning_rate": 0.08,
+  "threads": 6,
+  "bootstrap_reps": 2000,
+  "full_catalog_queries": 210,
+  "grid": [{"depth": 6, "l2_leaf_reg": 3}, {"depth": 6, "l2_leaf_reg": 10}, {"depth": 8, "l2_leaf_reg": 10}],
+  "max_auto_groups": 3,
+  "min_search_gain": 0.0005
+}

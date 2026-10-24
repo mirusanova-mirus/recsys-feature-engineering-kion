@@ -1,0 +1,80 @@
+{
+  "mixed_selected_vs_manual": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.011072031822823448,
+    "ci95": [
+      0.00839804347642894,
+      0.013830141457684759
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 5126,
+    "seed": 2026
+  },
+  "mixed_bank_vs_manual": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.02211759424683945,
+    "ci95": [
+      0.018694511482506657,
+      0.025863132527468025
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 5126,
+    "seed": 2026
+  },
+  "mixed_bank_vs_selected": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.011045562424016001,
+    "ci95": [
+      0.008150844447055132,
+      0.014099146260876806
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 5126,
+    "seed": 2026
+  },
+  "uniform_selected_vs_manual": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.004087336565013565,
+    "ci95": [
+      0.0015735566802674396,
+      0.0066460323714390155
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 5126,
+    "seed": 2026
+  },
+  "uniform_bank_vs_manual": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.010708627338556159,
+    "ci95": [
+      0.007389581812682987,
+      0.014075486737432887
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 5126,
+    "seed": 2026
+  },
+  "uniform_bank_vs_selected": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.00662129077354259,
+    "ci95": [
+      0.0038325236106888055,
+      0.009389130970973303
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 5126,
+    "seed": 2026
+  }
+}

@@ -1,0 +1,299 @@
+/Users/mirus/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+User-disjoint plan sealed BEFORE sampling: artifacts/independent/plan.lock.json
+{
+  "raw_rows": 5476251,
+  "population_users": 962179,
+  "sample_users": 5000,
+  "sample_seed": 2027,
+  "sample_rows_before_dedup": 28907,
+  "events": 28907,
+  "duplicate_triples_removed": 0,
+  "items_observed": 4106,
+  "date_min": "2021-03-13",
+  "date_max": "2021-08-22",
+  "missing_item_metadata": 0,
+  "history_quantiles": {
+    "0.0": 1.0,
+    "0.25": 1.0,
+    "0.5": 2.0,
+    "0.75": 6.0,
+    "0.9": 13.0,
+    "0.99": 56.0,
+    "1.0": 346.0
+  },
+  "platform": "macOS-15.5-arm64-arm-64bit",
+  "eligible_population_users": 932179,
+  "excluded_users": 30000,
+  "excluded_user_ids_sha256": "d15e34002369e1197cfddfc654e4a25fb7f03c6fd23bde06cce290ff25deb6df",
+  "cohort_protocol": "Uniform from users outside the original cohort; no activity filter; retain every provided event."
+}
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+train 2021-07-05 queries=139 rows=7149
+train 2021-07-06 queries=139 rows=7160
+train 2021-07-07 queries=121 rows=6236
+train 2021-07-08 queries=135 rows=6949
+train 2021-07-09 queries=142 rows=7307
+train 2021-07-10 queries=144 rows=7434
+train 2021-07-11 queries=164 rows=8463
+train 2021-07-12 queries=166 rows=8547
+train 2021-07-13 queries=148 rows=7612
+train 2021-07-14 queries=143 rows=7354
+train 2021-07-15 queries=139 rows=7151
+train 2021-07-16 queries=149 rows=7699
+train 2021-07-17 queries=174 rows=8972
+train 2021-07-18 queries=171 rows=8803
+train 2021-07-19 queries=141 rows=7254
+train 2021-07-20 queries=170 rows=8783
+train 2021-07-21 queries=150 rows=7747
+train 2021-07-22 queries=163 rows=8405
+train 2021-07-23 queries=147 rows=7584
+train 2021-07-24 queries=155 rows=7995
+train 2021-07-25 queries=146 rows=7545
+train 2021-07-26 queries=154 rows=7944
+train 2021-07-27 queries=160 rows=8240
+train 2021-07-28 queries=151 rows=7773
+train 2021-07-29 queries=165 rows=8493
+train 2021-07-30 queries=150 rows=7737
+train 2021-07-31 queries=179 rows=9207
+train 2021-08-01 queries=187 rows=9664
+search 2021-08-02 queries=170 rows=8762
+search 2021-08-03 queries=155 rows=7989
+search 2021-08-04 queries=161 rows=8277
+search 2021-08-05 queries=146 rows=7519
+search 2021-08-06 queries=159 rows=8176
+search 2021-08-07 queries=166 rows=8577
+search 2021-08-08 queries=183 rows=9463
+confirm 2021-08-09 queries=167 rows=8589
+confirm 2021-08-10 queries=174 rows=8984
+confirm 2021-08-11 queries=164 rows=8467
+confirm 2021-08-12 queries=162 rows=8357
+confirm 2021-08-13 queries=170 rows=8751
+confirm 2021-08-14 queries=174 rows=8964
+confirm 2021-08-15 queries=198 rows=10208
+test 2021-08-16 queries=185 rows=9547
+test 2021-08-17 queries=182 rows=9397
+test 2021-08-18 queries=168 rows=8652
+test 2021-08-19 queries=170 rows=8755
+test 2021-08-20 queries=164 rows=8467
+test 2021-08-21 queries=206 rows=10621
+test 2021-08-22 queries=233 rows=12030
+Built in 96.1s
+hyperparameters baseline_grid_0: NDCG@10=0.475650 AUC=0.827328 train=167.7s trees=343
+feature_screen search_reference: NDCG@10=0.469386 AUC=0.825018 train=57.7s trees=175
+feature_screen screen_trends: NDCG@10=0.471856 AUC=0.825380 train=56.1s trees=173
+feature_screen screen_multigenre: NDCG@10=0.477656 AUC=0.831194 train=60.4s trees=171
+feature_screen screen_window_1d: NDCG@10=0.471417 AUC=0.823813 train=54.4s trees=180
+feature_screen screen_window_3d: NDCG@10=0.471310 AUC=0.825396 train=54.4s trees=169
+feature_screen screen_window_10d: NDCG@10=0.465504 AUC=0.823556 train=38.7s trees=177
+feature_screen screen_window_14d: NDCG@10=0.471389 AUC=0.825074 train=48.7s trees=179
+feature_screen screen_window_60d: NDCG@10=0.471015 AUC=0.824325 train=39.2s trees=147
+feature_screen screen_decay_2d: NDCG@10=0.474790 AUC=0.825383 train=38.0s trees=180
+feature_screen screen_decay_10d: NDCG@10=0.469735 AUC=0.824727 train=34.0s trees=180
+feature_screen screen_decay_30d: NDCG@10=0.474821 AUC=0.825801 train=31.1s trees=177
+feature_screen screen_segment: NDCG@10=0.468605 AUC=0.823724 train=32.8s trees=178
+feature_combine screen_combination_2: NDCG@10=0.480365 AUC=0.831665 train=34.7s trees=180
+feature_combine screen_combination_3: NDCG@10=0.485774 AUC=0.833288 train=35.2s trees=179
+confirmation manual/42: NDCG@10=0.453409
+confirmation manual/43: NDCG@10=0.448427
+confirmation manual/44: NDCG@10=0.455453
+confirmation automatic/42: NDCG@10=0.466209
+confirmation automatic/43: NDCG@10=0.467249
+confirmation automatic/44: NDCG@10=0.467204
+confirmation all_automatic/42: NDCG@10=0.471071
+confirmation all_automatic/43: NDCG@10=0.469586
+confirmation all_automatic/44: NDCG@10=0.473193
+CHOICES SEALED: groups=['multigenre', 'decay_30d', 'decay_2d'], recommended=automatic; opening test now.
+ regime        variant          seed  ndcg@10  recall@10  roc_auc  logloss
+  mixed         manual            42 0.433475   0.669240 0.818133 0.114478
+  mixed         manual            43 0.435067   0.669558 0.817434 0.114795
+  mixed         manual            44 0.435378   0.665578 0.818164 0.114408
+  mixed         manual      ensemble 0.438188   0.671388 0.819459 0.114169
+  mixed      automatic            42 0.441795   0.672509 0.821436 0.113992
+  mixed      automatic            43 0.443634   0.678056 0.822095 0.114040
+  mixed      automatic            44 0.454346   0.681162 0.824024 0.113035
+  mixed      automatic      ensemble 0.450444   0.676977 0.824096 0.113275
+  mixed  all_automatic            42 0.454500   0.673695 0.823552 0.113079
+  mixed  all_automatic            43 0.449457   0.675290 0.822857 0.113323
+  mixed  all_automatic            44 0.452473   0.676806 0.823001 0.113471
+  mixed  all_automatic      ensemble 0.456420   0.678955 0.824344 0.112947
+  mixed  popularity_7d deterministic 0.390309   0.602279 0.749408      NaN
+  mixed popularity_all deterministic 0.336640   0.547482 0.741215      NaN
+uniform         manual            42 0.616740   0.796670 0.883987 0.103134
+uniform         manual            43 0.611311   0.797720 0.884240 0.103019
+uniform         manual            44 0.605829   0.792718 0.882986 0.103311
+uniform         manual      ensemble 0.614849   0.795531 0.885161 0.102801
+uniform      automatic            42 0.608975   0.789693 0.884217 0.103028
+uniform      automatic            43 0.613529   0.792817 0.885482 0.102524
+uniform      automatic            44 0.615580   0.795868 0.885669 0.101877
+uniform      automatic      ensemble 0.613982   0.791311 0.886545 0.102105
+uniform  all_automatic            42 0.619034   0.797141 0.886020 0.101659
+uniform  all_automatic            43 0.616544   0.795568 0.885020 0.102057
+uniform  all_automatic            44 0.614558   0.797334 0.885111 0.102230
+uniform  all_automatic      ensemble 0.620312   0.798798 0.886449 0.101674
+uniform  popularity_7d deterministic 0.579002   0.715720 0.811480      NaN
+uniform popularity_all deterministic 0.567420   0.738434 0.847368      NaN
+{
+  "mixed": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.012255571104509085,
+    "ci95": [
+      0.0037244995958376527,
+      0.020820193720064394
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 838,
+    "seed": 2026
+  },
+  "uniform": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": -0.0008670963970919323,
+    "ci95": [
+      -0.009118675353135446,
+      0.007668610724242105
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 838,
+    "seed": 2026
+  },
+  "mixed_bank_vs_manual": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.01823195760372186,
+    "ci95": [
+      0.008998090727744209,
+      0.027850405750758332
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 838,
+    "seed": 2026
+  },
+  "mixed_bank_vs_selected": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.005976386499212774,
+    "ci95": [
+      -0.0007167000804145142,
+      0.012610352837462018
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 838,
+    "seed": 2026
+  },
+  "uniform_bank_vs_manual": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.005462352430591417,
+    "ci95": [
+      -0.0033548230972665636,
+      0.01415509964111595
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 838,
+    "seed": 2026
+  },
+  "uniform_bank_vs_selected": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.006329448827683349,
+    "ci95": [
+      0.0006653486835251811,
+      0.012099198657801255
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 838,
+    "seed": 2026
+  }
+}
+Full catalog 2021-08-16: 26 queries, 102,866 candidates
+Full catalog 2021-08-17: 24 queries, 95,415 candidates
+Full catalog 2021-08-18: 33 queries, 131,615 candidates
+Full catalog 2021-08-19: 26 queries, 104,243 candidates
+Full catalog 2021-08-20: 28 queries, 112,748 candidates
+Full catalog 2021-08-21: 30 queries, 121,400 candidates
+Full catalog 2021-08-22: 43 queries, 175,123 candidates
+[
+  {
+    "variant": "manual",
+    "queries": 210,
+    "ndcg@5": 0.11951168840723844,
+    "recall@5": 0.16523809523809524,
+    "ndcg@10": 0.13354436045627355,
+    "recall@10": 0.20472222222222222,
+    "ndcg@20": 0.14819692976073956,
+    "recall@20": 0.2586904761904762,
+    "mrr": 0.13770729431808276
+  },
+  {
+    "variant": "automatic",
+    "queries": 210,
+    "ndcg@5": 0.10919105668999414,
+    "recall@5": 0.1442063492063492,
+    "ndcg@10": 0.13664693060147823,
+    "recall@10": 0.22376984126984123,
+    "ndcg@20": 0.1562021604645978,
+    "recall@20": 0.2945634920634921,
+    "mrr": 0.1370172842409485
+  },
+  {
+    "variant": "all_automatic",
+    "queries": 210,
+    "ndcg@5": 0.11684378694305263,
+    "recall@5": 0.1561111111111111,
+    "ndcg@10": 0.13358822033335244,
+    "recall@10": 0.20373015873015873,
+    "ndcg@20": 0.15765556650249576,
+    "recall@20": 0.2903571428571428,
+    "mrr": 0.1413982066808228
+  },
+  {
+    "variant": "popularity_7d",
+    "queries": 210,
+    "ndcg@5": 0.12225839340550032,
+    "recall@5": 0.15968253968253968,
+    "ndcg@10": 0.14851884990622635,
+    "recall@10": 0.23500000000000001,
+    "ndcg@20": 0.15938788354956177,
+    "recall@20": 0.27547619047619043,
+    "mrr": 0.14142553041660774
+  }
+]
+{
+  "passed": true,
+  "checks": [
+    "cache provenance",
+    "strict temporal history",
+    "nonoverlapping splits",
+    "no forbidden features",
+    "unique candidates",
+    "negative count",
+    "recomputed ensemble metrics",
+    "sealed audit checksum",
+    "full-catalog subset size",
+    "model feature names",
+    "SkipTest categorical counters",
+    "model seeds"
+  ]
+}
+{
+  "passed": true,
+  "users": 5000,
+  "user_overlap_with_primary": 0,
+  "complete_histories_verified": true,
+  "uniform_user_sample_recomputed": true,
+  "events": 28907,
+  "selected_users_sha256": "55a0dd80205ac49c895bd91ac049719f2148dbcaf4cee773d88015a7e2e202b0",
+  "plan_created_utc": "2026-10-24T07:40:26.474801+00:00",
+  "scope": "Independent users within the same KION source; shared items/metadata and calendar mean this is not a new environment."
+}

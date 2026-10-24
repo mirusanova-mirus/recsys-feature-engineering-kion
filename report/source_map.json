@@ -1,0 +1,80 @@
+{
+  "imported_from": "REPORT.md",
+  "markdown_sha256": "e3887abd66210a9caba273c2d62511bc3a652d635689a8022fcc3afb50a8d45d",
+  "sections": [
+    {
+      "file": "sections/00-summary.tex",
+      "title": "Краткое содержание"
+    },
+    {
+      "file": "sections/01-question.tex",
+      "title": "1. Результат и исследовательский вопрос"
+    },
+    {
+      "file": "sections/02-data.tex",
+      "title": "2. Данные и целевая задача"
+    },
+    {
+      "file": "sections/03-protocol.tex",
+      "title": "3. Временной протокол и кандидаты"
+    },
+    {
+      "file": "sections/04-baseline.tex",
+      "title": "4. Сильный ручной baseline"
+    },
+    {
+      "file": "sections/05-automatic-features.tex",
+      "title": "5. Автоматизация признаков"
+    },
+    {
+      "file": "sections/06-results.tex",
+      "title": "6. Основные результаты"
+    },
+    {
+      "file": "sections/07-robustness.tex",
+      "title": "7. Устойчивость и анализ"
+    },
+    {
+      "file": "sections/08-cost.tex",
+      "title": "8. Стоимость и масштабирование"
+    },
+    {
+      "file": "sections/09-limitations.tex",
+      "title": "9. Проверки воспроизводимости и ограничения"
+    },
+    {
+      "file": "sections/10-additional-checks.tex",
+      "title": "10. Дополнительные проверки после основного эксперимента"
+    },
+    {
+      "file": "sections/11-conclusions.tex",
+      "title": "11. Вывод"
+    },
+    {
+      "file": "sections/12-reproduction.tex",
+      "title": "Воспроизведение"
+    }
+  ],
+  "images": {
+    "results.png": "artifacts/main/figures/results.png",
+    "search.png": "artifacts/main/figures/search.png",
+    "importance.png": "artifacts/main/figures/importance.png",
+    "followup.png": "artifacts/additional/figures/followup.png"
+  },
+  "counts": {
+    "blank_line": 104,
+    "paragraph": 83,
+    "text": 856,
+    "codespan": 78,
+    "strong": 75,
+    "heading": 21,
+    "link": 11,
+    "emphasis": 1,
+    "table": 17,
+    "table_rows": 85,
+    "list": 3,
+    "block_text": 12
+  },
+  "editing": "The TeX sources are now independent; no experiment or report target overwrites them.",
+  "notes": "All main and additional research sections were preserved."
+}

@@ -1,0 +1,26 @@
+% !TeX program = pdflatex
+% Редактируемый отчёт. Настройки автора и названия: metadata.tex.
+\documentclass[11pt,a4paper]{article}
+\input{preamble}
+\input{metadata}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\centering
+{\large Исследование по рекомендательным системам\par}
+\vspace{2.5cm}
+{\LARGE\bfseries \reporttitle\par}
+\vspace{1cm}
+{\large \reportsubtitle\par}
+\vspace{1.5cm}
+\ifx\reportauthor\empty\else{\large \reportauthor\par}\fi
+\vfill
+{\large \reportdate\par}
+\end{titlepage}
+\pagenumbering{roman}
+\hypersetup{pageanchor=true}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\input{sections/body}
+\end{document}

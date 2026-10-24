@@ -1,0 +1,54 @@
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+train 2021-06-14 queries=772 rows=39737
+train 2021-06-15 queries=768 rows=39553
+train 2021-06-16 queries=1369 rows=70244
+train 2021-06-17 queries=881 rows=45277
+train 2021-06-18 queries=901 rows=46314
+train 2021-06-19 queries=900 rows=46309
+train 2021-06-20 queries=957 rows=49328
+train 2021-06-21 queries=771 rows=39714
+train 2021-06-22 queries=804 rows=41384
+train 2021-06-23 queries=832 rows=42792
+train 2021-06-24 queries=723 rows=37213
+train 2021-06-25 queries=810 rows=41719
+train 2021-06-26 queries=915 rows=47203
+train 2021-06-27 queries=925 rows=47665
+train 2021-06-28 queries=875 rows=45032
+train 2021-06-29 queries=926 rows=47686
+train 2021-06-30 queries=1502 rows=77184
+train 2021-07-01 queries=1079 rows=55428
+train 2021-07-02 queries=996 rows=51207
+train 2021-07-03 queries=941 rows=48474
+train 2021-07-04 queries=1018 rows=52428
+train 2021-07-05 queries=866 rows=44599
+train 2021-07-06 queries=846 rows=43524
+train 2021-07-07 queries=785 rows=40365
+train 2021-07-08 queries=795 rows=40901
+train 2021-07-09 queries=827 rows=42559
+train 2021-07-10 queries=906 rows=46686
+train 2021-07-11 queries=910 rows=46862
+search 2021-07-12 queries=864 rows=44507
+search 2021-07-13 queries=870 rows=44808
+search 2021-07-14 queries=799 rows=41200
+search 2021-07-15 queries=874 rows=45012
+search 2021-07-16 queries=885 rows=45578
+search 2021-07-17 queries=988 rows=50954
+search 2021-07-18 queries=1018 rows=52507
+confirm 2021-07-19 queries=892 rows=45984
+confirm 2021-07-20 queries=884 rows=45585
+confirm 2021-07-21 queries=863 rows=44471
+confirm 2021-07-22 queries=864 rows=44513
+confirm 2021-07-23 queries=858 rows=44279
+confirm 2021-07-24 queries=909 rows=46871
+confirm 2021-07-25 queries=998 rows=51495
+test 2021-07-26 queries=920 rows=47377
+test 2021-07-27 queries=936 rows=48288
+test 2021-07-28 queries=948 rows=48823
+test 2021-07-29 queries=949 rows=48867
+test 2021-07-30 queries=1019 rows=52591
+test 2021-07-31 queries=1082 rows=55860
+test 2021-08-01 queries=1123 rows=57996
+Built in 174.3s

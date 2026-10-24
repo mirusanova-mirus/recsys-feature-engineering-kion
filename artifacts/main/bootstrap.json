@@ -1,0 +1,28 @@
+{
+  "mixed": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.011072031822823448,
+    "ci95": [
+      0.00839804347642894,
+      0.013830141457684759
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 5126,
+    "seed": 2026
+  },
+  "uniform": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.004087336565013565,
+    "ci95": [
+      0.0015735566802674396,
+      0.0066460323714390155
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 5126,
+    "seed": 2026
+  }
+}

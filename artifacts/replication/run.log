@@ -1,0 +1,138 @@
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+hyperparameters baseline_grid_0: NDCG@10=0.503839 AUC=0.857879 train=353.0s trees=450
+feature_screen search_reference: NDCG@10=0.492248 AUC=0.853270 train=92.9s trees=180
+feature_screen screen_trends: NDCG@10=0.493162 AUC=0.853780 train=95.8s trees=180
+feature_screen screen_multigenre: NDCG@10=0.499561 AUC=0.857451 train=91.8s trees=180
+feature_screen screen_window_1d: NDCG@10=0.502357 AUC=0.855671 train=96.6s trees=180
+feature_screen screen_window_3d: NDCG@10=0.501908 AUC=0.855051 train=102.2s trees=180
+feature_screen screen_window_10d: NDCG@10=0.492814 AUC=0.853595 train=117.8s trees=180
+feature_screen screen_window_14d: NDCG@10=0.493223 AUC=0.853265 train=124.9s trees=180
+feature_screen screen_window_60d: NDCG@10=0.492869 AUC=0.853191 train=136.5s trees=180
+feature_screen screen_decay_2d: NDCG@10=0.497757 AUC=0.854958 train=100.9s trees=180
+feature_screen screen_decay_10d: NDCG@10=0.490670 AUC=0.853119 train=89.3s trees=180
+feature_screen screen_decay_30d: NDCG@10=0.492687 AUC=0.853731 train=76.7s trees=180
+feature_screen screen_segment: NDCG@10=0.491661 AUC=0.852372 train=70.5s trees=180
+feature_combine screen_combination_2: NDCG@10=0.502825 AUC=0.855893 train=76.8s trees=180
+feature_combine screen_combination_3: NDCG@10=0.511653 AUC=0.860314 train=77.1s trees=180
+confirmation manual/42: NDCG@10=0.480675
+confirmation manual/43: NDCG@10=0.481148
+confirmation manual/44: NDCG@10=0.483387
+confirmation automatic/42: NDCG@10=0.501337
+confirmation automatic/43: NDCG@10=0.500490
+confirmation automatic/44: NDCG@10=0.501262
+confirmation all_automatic/42: NDCG@10=0.502840
+confirmation all_automatic/43: NDCG@10=0.503007
+confirmation all_automatic/44: NDCG@10=0.501691
+CHOICES SEALED: groups=['window_1d', 'window_3d', 'multigenre'], recommended=automatic; opening test now.
+ regime        variant          seed  ndcg@10  recall@10  roc_auc  logloss
+  mixed         manual            42 0.495635   0.743960 0.859409 0.106602
+  mixed         manual            43 0.494170   0.747138 0.859244 0.106849
+  mixed         manual            44 0.494218   0.745903 0.859686 0.106651
+  mixed         manual      ensemble 0.497037   0.746132 0.860036 0.106491
+  mixed      automatic            42 0.515150   0.760085 0.865307 0.104565
+  mixed      automatic            43 0.514760   0.758332 0.864708 0.104645
+  mixed      automatic            44 0.514691   0.755893 0.865048 0.104326
+  mixed      automatic      ensemble 0.517142   0.759249 0.865530 0.104318
+  mixed  all_automatic            42 0.514642   0.759663 0.864755 0.104414
+  mixed  all_automatic            43 0.514272   0.758764 0.864832 0.104448
+  mixed  all_automatic            44 0.514194   0.757193 0.864665 0.104446
+  mixed  all_automatic      ensemble 0.516033   0.758839 0.865278 0.104244
+  mixed  popularity_7d deterministic 0.427636   0.685868 0.810409      NaN
+  mixed popularity_all deterministic 0.347043   0.562875 0.773097      NaN
+uniform         manual            42 0.704874   0.882778 0.928289 0.092038
+uniform         manual            43 0.703870   0.884097 0.927806 0.092314
+uniform         manual            44 0.702781   0.883506 0.928041 0.092207
+uniform         manual      ensemble 0.705242   0.885057 0.928536 0.092003
+uniform      automatic            42 0.712660   0.888131 0.930718 0.090673
+uniform      automatic            43 0.711555   0.886629 0.929942 0.090949
+uniform      automatic            44 0.710278   0.886121 0.930190 0.090702
+uniform      automatic      ensemble 0.713418   0.888156 0.930676 0.090607
+uniform  all_automatic            42 0.713111   0.887941 0.930735 0.090554
+uniform  all_automatic            43 0.711924   0.887617 0.930726 0.090623
+uniform  all_automatic            44 0.714019   0.886889 0.930620 0.090542
+uniform  all_automatic      ensemble 0.714639   0.888410 0.931104 0.090405
+uniform  popularity_7d deterministic 0.692570   0.855162 0.897148      NaN
+uniform popularity_all deterministic 0.640254   0.832619 0.900071      NaN
+{
+  "mixed": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.020105329498826593,
+    "ci95": [
+      0.01648067666124539,
+      0.023881937130541833
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 4569,
+    "seed": 2026
+  },
+  "uniform": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.008175785469577134,
+    "ci95": [
+      0.004873748298899206,
+      0.011432775262734392
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 4569,
+    "seed": 2026
+  },
+  "mixed_bank_vs_manual": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.018995583310268967,
+    "ci95": [
+      0.01524320200149996,
+      0.022642018182174775
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 4569,
+    "seed": 2026
+  },
+  "mixed_bank_vs_selected": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": -0.0011097461885576265,
+    "ci95": [
+      -0.003658273957835497,
+      0.0011451810208020514
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 4569,
+    "seed": 2026
+  },
+  "uniform_bank_vs_manual": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.009396525127190357,
+    "ci95": [
+      0.005860012754806887,
+      0.012653245449062819
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 4569,
+    "seed": 2026
+  },
+  "uniform_bank_vs_selected": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.001220739657613222,
+    "ci95": [
+      -0.0012100620104467472,
+      0.003446987377397155
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 4569,
+    "seed": 2026
+  }
+}

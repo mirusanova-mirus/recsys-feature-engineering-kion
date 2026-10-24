@@ -1,0 +1,46 @@
+% Этот текст можно свободно редактировать.
+\FloatBarrier
+\section{Основные результаты}
+
+Основная метрика --- query-macro NDCG@10 с бинарной релевантностью и несколькими положительными объектами. Дополнительно: Recall@5/10/20, NDCG@5/20, MRR, ROC-AUC и LogLoss. Полный набор значений --- \code{metrics.csv}. IDCG нормируется по \texttt{min(K, число\_положительных\_объектов)}. При одинаковых score порядок задаёт ID объекта, а не label или порядок строк.
+
+\FloatBarrier
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\setlength{\reporttablewidth}{\dimexpr\linewidth-30pt\relax}
+\renewcommand{\arraystretch}{1.15}
+\footnotesize
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.17579\reporttablewidth}>{\raggedright\arraybackslash}p{0.14599\reporttablewidth}>{\raggedright\arraybackslash}p{0.14599\reporttablewidth}>{\raggedright\arraybackslash}p{0.14599\reporttablewidth}>{\raggedright\arraybackslash}p{0.14599\reporttablewidth}>{\raggedright\arraybackslash}p{0.24027\reporttablewidth}@{}}
+\caption{Основные результаты}\label{tab:results-5}\\
+\toprule
+\textbf{Модель} & \textbf{NDCG@10} & \textbf{Recall@10} & \textbf{ROC-AUC} & \textbf{LogLoss} & \textbf{NDCG@10 по отдельным seed, mean \ensuremath{\pm} SD} \\
+\midrule
+\endfirsthead
+\multicolumn{6}{l}{\small\itshape Продолжение таблицы \thetable}\\
+\toprule
+\textbf{Модель} & \textbf{NDCG@10} & \textbf{Recall@10} & \textbf{ROC-AUC} & \textbf{LogLoss} & \textbf{NDCG@10 по отдельным seed, mean \ensuremath{\pm} SD} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r}{\footnotesize Продолжение на следующей странице}\\
+\endfoot
+\bottomrule
+\endlastfoot
+Ручные признаки & 0.47332 & 0.71530 & 0.84922 & 0.11112 & 0.47049 \ensuremath{\pm} 0.00160 \\
+Автоотбор & 0.48440 & 0.71821 & 0.85197 & 0.10997 & 0.48275 \ensuremath{\pm} 0.00130 \\
+Весь банк признаков & 0.49114 & 0.73090 & 0.85537 & 0.10930 & один запуск \\
+Без косвенных связей & 0.42575 & 0.65802 & 0.82498 & 0.11622 & один запуск \\
+Только метаданные & 0.31506 & 0.51071 & 0.70470 & 0.13461 & один запуск \\
+Популярность, 7 дней & 0.40059 & 0.64455 & 0.79809 & --- & один запуск \\
+Популярность, вся история & 0.33254 & 0.55231 & 0.76017 & --- & один запуск \\
+\end{longtable}
+\endgroup
+
+В двух главных строках показан ансамбль вероятностей трёх seed (42,43,44); рядом приведены среднее и выборочное SD NDCG отдельных моделей. Другие строки --- один заранее заданный seed 42 либо детерминированная популярность. Ансамбли у обоих основных подходов имеют одинаковое число моделей. Абляции с одним seed следует сравнивать также с seed 42 в исходной таблице; разницу с ансамблем нельзя целиком приписывать удалённым признакам.
+
+Recall@10 изменился только на +0.00291, при большем росте NDCG@10 +0.01107. Это согласуется с улучшением порядка уже попадающих в верхнюю часть списка объектов, а не только с увеличением числа найденных позитивов.
+
+Разность ансамблей оценивается \textbf{парным кластерным bootstrap по пользователям}, 2000 повторений, seed 2026. Все запросы выбранного пользователя переносятся вместе; в каждой реплике пересчитывается среднее по запросам. Это сохраняет корреляцию запросов одного пользователя и оценивает именно query-macro разность. ДИ условен на этом датасете, кандидатах, фиксированном обучении и выборе признаков; он не описывает неопределённость переноса в другую систему или повторного выбора train-выборки. Три seed отдельно характеризуют чувствительность к случайности обучения.
+
+ROC-AUC и LogLoss относятся к искусственной выборке кандидатов. Предсказания нельзя читать как калиброванную вероятность реального просмотра или клика в полном каталоге. NDCG на 50 контролях также не равен каталожному NDCG; зависимость sampled metrics от состава кандидатов разобрана в \href{https://research.google/pubs/on-sampled-metrics-for-item-recommendation/}{Krichene \& Rendle, KDD 2020}.
+

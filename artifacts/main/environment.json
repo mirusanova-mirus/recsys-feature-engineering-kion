@@ -1,0 +1,19 @@
+{
+  "python": "3.9.6 (default, Apr 30 2025, 02:07:17) \n[Clang 17.0.0 (clang-1700.0.13.5)]",
+  "platform": "macOS-15.5-arm64-arm-64bit",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "1.5.3",
+    "catboost": "1.2.10",
+    "scikit-learn": "1.4.2",
+    "scipy": "1.13.1",
+    "pyarrow": "15.0.2",
+    "matplotlib": "3.9.4",
+    "requests": "2.32.4"
+  },
+  "threads": 6,
+  "peak_rss_mib": 4020.765625,
+  "experiment_wall_seconds": 3261.78003725,
+  "total_fit_seconds": 3755.885392793,
+  "model_count": 26
+}

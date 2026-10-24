@@ -1,0 +1,40 @@
+{
+  "date": "2021-07-31",
+  "repeats": 1,
+  "kind": "single-day microbenchmark; no extrapolated timings",
+  "results": [
+    {
+      "sample_users": 1000,
+      "complete_history_rows": 5617,
+      "past_rows": 4371,
+      "queries": 34,
+      "candidate_rows": 1745,
+      "features": 128,
+      "candidate_seconds": 0.01858462500000002,
+      "feature_seconds": 0.13443754200000002,
+      "frame_mib": 2.222733497619629
+    },
+    {
+      "sample_users": 10000,
+      "complete_history_rows": 56605,
+      "past_rows": 42765,
+      "queries": 347,
+      "candidate_rows": 17912,
+      "features": 128,
+      "candidate_seconds": 0.1919369999999999,
+      "feature_seconds": 0.5266593750000002,
+      "frame_mib": 22.81606960296631
+    },
+    {
+      "sample_users": 30000,
+      "complete_history_rows": 169946,
+      "past_rows": 128334,
+      "queries": 1082,
+      "candidate_rows": 55860,
+      "features": 128,
+      "candidate_seconds": 0.6043790830000002,
+      "feature_seconds": 1.353022541,
+      "frame_mib": 71.18256664276123
+    }
+  ]
+}

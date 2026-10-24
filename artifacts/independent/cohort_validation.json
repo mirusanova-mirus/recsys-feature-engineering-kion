@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "users": 5000,
+  "user_overlap_with_primary": 0,
+  "complete_histories_verified": true,
+  "uniform_user_sample_recomputed": true,
+  "events": 28907,
+  "selected_users_sha256": "55a0dd80205ac49c895bd91ac049719f2148dbcaf4cee773d88015a7e2e202b0",
+  "plan_created_utc": "2026-10-24T07:40:26.474801+00:00",
+  "scope": "Independent users within the same KION source; shared items/metadata and calendar mean this is not a new environment."
+}

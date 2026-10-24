@@ -1,0 +1,106 @@
+{
+  "created_utc": "2026-10-24T07:23:41.201390+00:00",
+  "status": "Post-hoc extension: original mixed, uniform and catalog test metrics were already seen.",
+  "fingerprint": {
+    "config": {
+      "main_config": "configs/main.json",
+      "replication_config": "configs/temporal_replication.json",
+      "output_dir": "artifacts/additional",
+      "model_seeds": [
+        42,
+        43,
+        44
+      ],
+      "budgets": [
+        180,
+        450
+      ],
+      "variants": [
+        "manual",
+        "automatic",
+        "all_automatic"
+      ],
+      "bootstrap_reps": 2000,
+      "diagnostic_periods": [
+        "search",
+        "confirm"
+      ],
+      "test_regimes": [
+        "mixed",
+        "uniform"
+      ],
+      "full_catalog_queries": 210,
+      "catalog_seed": 2026
+    },
+    "inputs": {
+      "artifacts/main/selection.lock.json": "826ec4b7e86d231e6a49b6e03bd00ef854df6bc60f7f97716009956bb0e9ba89",
+      "artifacts/main/metrics.csv": "1173c6d32cb4afa8b366970eece0fece395406f3c163e0ea875001d3a72b9860",
+      "artifacts/main/metrics.json": "b860044218a065a8a01ce54be95f805b257c36fda92c8f4147f16b85a265d94b",
+      "artifacts/main/bootstrap.json": "5d3f0d40748645d71b2d56c3d5c602b6d8b97984ae760e84a089936792e28e49",
+      "artifacts/main/full_catalog.json": "3c1c4b356b46476ae53f95fac4ddb65ec8c59cfad929e13e7eb82cc30e87a01f",
+      "artifacts/main/audit.json": "ff842a3a4892a777da1fe97a9e9d0dccc5a83c34cf000de114a7dfba433efb05",
+      "artifacts/main/feature_registry.json": "df2ff7c6303015e666b8561fc942066afed4db8ef63e45340622fc95eb48b451",
+      "artifacts/main/run_fingerprint.json": "7f34f67e192b201008524f224bb25c72cf63f353b6904ce39db85bd95c0f52e1",
+      "artifacts/main/cache/train.parquet": "e3a836bcbc93564ef3212b112ea59a041e0253107dd0147318621bb4e625d5a9",
+      "artifacts/main/cache/search.parquet": "ae5f4158b7121587ec77bb68ac3615b39275326fe6e35e864bf43978192130a8",
+      "artifacts/main/cache/confirm.parquet": "80a72b9c99acee020c0f52a79f994263d6f1b218daa1c70ac1283c82620ece02",
+      "artifacts/main/cache/test.parquet": "5e80b15b1da27b07dfa5aca8e9eb54ff22e5499a471a0449c76a78c34ace0b08",
+      "artifacts/main/cache/test_uniform.parquet": "cd33502ed6386b61eb01d8e74f96b2724312930f05f141d8b35898b633b6d9e7",
+      "configs/main.json": "b034aff836e5a79ff08c0f400f84ab56e447ac0bbc8e386f8bef6ea818c5277d",
+      "configs/temporal_replication.json": "c554aec87b3dbe2a3046fd95910d621d7b0054341fa0ea513ddd65733ba016f1"
+    }
+  },
+  "repeats": "Repeat the already-defined full-bank variant with seeds 42,43,44; no change to the primary comparison.",
+  "budget_control": "Fixed original manual/selected/full-bank sets x caps 180/450 x three seeds; score search and confirm only. No new feature choice from these outcomes.",
+  "budget_interaction": "On confirm, (bank450-selected450)-(bank180-selected180), paired user-cluster bootstrap. No other feature search added.",
+  "replication": {
+    "data_dir": "data/processed",
+    "output_dir": "artifacts/replication",
+    "end_exclusive": "2021-08-02",
+    "train_days": 28,
+    "search_days": 7,
+    "confirmation_days": 7,
+    "test_days": 7,
+    "train_negatives": 50,
+    "eval_negatives": 50,
+    "uniform_fraction": 0.5,
+    "candidate_seed": 107,
+    "model_seeds": [
+      42,
+      43,
+      44
+    ],
+    "iterations": 450,
+    "search_iterations": 180,
+    "learning_rate": 0.08,
+    "threads": 6,
+    "bootstrap_reps": 2000,
+    "full_catalog_queries": 210,
+    "grid": [
+      {
+        "depth": 6,
+        "l2_leaf_reg": 3
+      }
+    ],
+    "max_auto_groups": 3,
+    "min_search_gain": 0.0005,
+    "enabled_variants": [
+      "manual",
+      "automatic",
+      "all_automatic"
+    ],
+    "repeat_variants": [
+      "manual",
+      "automatic",
+      "all_automatic"
+    ],
+    "catalog_variants": [
+      "manual",
+      "automatic",
+      "all_automatic"
+    ]
+  },
+  "replication_policy": "Re-run the original selector on earlier train/search; freeze depth=6,l2=3, all other settings. Three seeds for manual, selected and bank. Seal selection before test 2021-07-26..2021-08-01.",
+  "temporal_independence_limit": "Test weeks do not overlap, but the same users/source are reused and earlier outcomes were part of the original training history. Retrospective temporal replication, not a pristine independently collected holdout.",
+  "no_catalog_tuning": "Evaluate raw scores plus fixed seven-day popularity on the same 210 catalog queries; do not correct sampling or choose a model from catalog test outcomes."
+}

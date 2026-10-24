@@ -1,0 +1,19 @@
+test_candidate_invariance_to_future_and_uniqueness (test_protocol.ProtocolTests) ... ok
+test_catalog_coverage_repeats_and_multiple_targets (test_protocol.ProtocolTests) ... ok
+test_future_invariance_and_no_target_columns (test_protocol.ProtocolTests) ... ok
+test_metrics_hand_computed_ties_and_bootstrap (test_protocol.ProtocolTests) ... ok
+test_multi_genre_secondary_token (test_protocol.ProtocolTests) ... /Users/mirus/Library/Python/3.9/lib/python/site-packages/pandas/core/dtypes/cast.py:1641: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  return np.find_common_type(types, [])
+ok
+test_multi_positive_idcg (test_protocol.ProtocolTests) ... ok
+test_temporal_replication_bounds_do_not_use_latest_day (test_protocol.ProtocolTests) ... ok
+test_window_boundary_and_current_day_guard (test_protocol.ProtocolTests) ... /Users/mirus/Library/Python/3.9/lib/python/site-packages/pandas/core/dtypes/cast.py:1641: DeprecationWarning: np.find_common_type is deprecated.  Please use `np.result_type` or `np.promote_types`.
+See https://numpy.org/devdocs/release/1.25.0-notes.html and the docs for more information.  (Deprecated NumPy 1.25)
+  return np.find_common_type(types, [])
+ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.454s
+
+OK

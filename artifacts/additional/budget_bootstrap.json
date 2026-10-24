@@ -1,0 +1,82 @@
+{
+  "search_bank_vs_selected_b180": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.007058814572758875,
+    "ci95": [
+      0.0041817172865050945,
+      0.01004041095764063
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 4724,
+    "seed": 2026
+  },
+  "search_bank_vs_selected_b450": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.008257661640676166,
+    "ci95": [
+      0.005368811328861284,
+      0.011299972605281787
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 4724,
+    "seed": 2026
+  },
+  "search_budget_interaction": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.0011988470679172906,
+    "ci95": [
+      -0.0015423364155668744,
+      0.004064334015623495
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 4724,
+    "seed": 2026,
+    "interpretation": "(bank450-selected450)-(bank180-selected180)"
+  },
+  "confirm_bank_vs_selected_b180": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.010179234990098795,
+    "ci95": [
+      0.0069499271329403044,
+      0.013137104490912424
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 4889,
+    "seed": 2026
+  },
+  "confirm_bank_vs_selected_b450": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.012497247467257656,
+    "ci95": [
+      0.009309932512934221,
+      0.015765720844755464
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 4889,
+    "seed": 2026
+  },
+  "confirm_budget_interaction": {
+    "metric": "ndcg@10",
+    "estimand": "query_macro_difference",
+    "cluster": "user_id",
+    "delta": 0.002318012477158859,
+    "ci95": [
+      -0.0006419199345277612,
+      0.0052192576362593635
+    ],
+    "bootstrap_replicates": 2000,
+    "users": 4889,
+    "seed": 2026,
+    "interpretation": "(bank450-selected450)-(bank180-selected180)"
+  }
+}

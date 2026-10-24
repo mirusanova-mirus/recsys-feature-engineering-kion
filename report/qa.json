@@ -1,0 +1,57 @@
+{
+  "pdf": "report.pdf",
+  "pages": 19,
+  "pdf_sha256": "58e3b64856911883cfd1e046f5b87b9a0f41e1ca1946c5d9090533f0a2ab8be5",
+  "tex_source_sha256": {
+    "main.tex": "cc6cfe239d93b5257e4e18a13a2a89fcabd558745addb723de09d366f2cfee4c",
+    "metadata.tex": "d4b6e168a2aa6509885fafe354e1671ffb5eff28a1efa28a64f366e5fddd674f",
+    "preamble.tex": "77875058a495dd9b3e9a9cc777727374d0777f4e57b8fa9b6cf68a42598476fc",
+    "sections/00-summary.tex": "929621fec97342da581245f3568991d791a74b7bc1c7d85ef32e2ef53bde1b70",
+    "sections/01-question.tex": "21b5427f2d8048878a70a44c55db4fa5da2b006c6e332cb21ac4a72852f55d02",
+    "sections/02-data.tex": "692abae74cc66af178e8f1d77b2701c4f7acec695701dc0276b6ddb653a0ac69",
+    "sections/03-protocol.tex": "d32d08e6e350ae6ae0d5af9cbcc64c1a1c4cfbe0f6e1022fa219d0323aa4f78c",
+    "sections/04-baseline.tex": "0177e34d3988d00e6ed15b0f784ebead42ae3d5915aeab393283d6c6cf395d03",
+    "sections/05-automatic-features.tex": "17c84120b2f9021310d794719c5b34eac22b8212723092f96f82f8dffc3ca42f",
+    "sections/06-results.tex": "95d2f499c7374dc6a95807d0ebb55ca9624db9a353d2138c74ba7878f9b152b7",
+    "sections/07-robustness.tex": "9cfa14bd02c83976964001b9f8a271b17bf1a9052608a0794fa2a3f9af17fb25",
+    "sections/08-cost.tex": "32f949f3c0f83154279ead594aef2ef0b9c0a7d173f59d4f69395eb99ff76c3e",
+    "sections/09-limitations.tex": "5bf400f2e224fb1de0f66b34bfd0368d1df3afb6dd7efa172aa16bb8adb7f360",
+    "sections/10-additional-checks.tex": "ce49ea1f862d12e1d4b5c5b41783d01759c1eddc1b36c3c8ddfbacee93b8316e",
+    "sections/11-conclusions.tex": "89db216403aa33f7305c5f67f7a67afaa0026bb857facba4826af739a2c4c6c5",
+    "sections/12-reproduction.tex": "c0321a5abb19e3ef0384708df99d25c024bc592f2089d530e891f79ed97448c5",
+    "sections/body.tex": "28d0fbf8dc73269b65534305c1a1e52a3d3200a9c0f6eff95650d60cc5b6c5e8"
+  },
+  "compilers": {
+    "local": "pdfLaTeX / TeX Live 2026 / latexmk 4.88",
+    "codex_desktop": "success, final saved source"
+  },
+  "visual_review": {
+    "pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "tables_figures_equations_and_cyrillic": "readable; no clipping or overlap",
+    "final_typography_changes_reinspected": true
+  },
+  "experiment_source_config_tests_unchanged_from_original_archive": 22,
+  "unit_tests_passed": 8,
+  "reference_preservation_check": "passed",
+  "checked_utc": "2026-10-24T19:55:56.820399+00:00"
+}

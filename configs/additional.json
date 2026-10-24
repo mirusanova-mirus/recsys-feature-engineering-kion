@@ -1,0 +1,13 @@
+{
+  "main_config": "configs/main.json",
+  "replication_config": "configs/temporal_replication.json",
+  "output_dir": "artifacts/additional",
+  "model_seeds": [42, 43, 44],
+  "budgets": [180, 450],
+  "variants": ["manual", "automatic", "all_automatic"],
+  "bootstrap_reps": 2000,
+  "diagnostic_periods": ["search", "confirm"],
+  "test_regimes": ["mixed", "uniform"],
+  "full_catalog_queries": 210,
+  "catalog_seed": 2026
+}

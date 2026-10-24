@@ -1,0 +1,43 @@
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+additional manual_b180_42: fit=0.0s, trees=180
+additional manual_b180_43: fit=42.4s, trees=180
+additional manual_b180_44: fit=44.6s, trees=180
+additional automatic_b180_42: fit=0.0s, trees=180
+additional automatic_b180_43: fit=52.9s, trees=180
+additional automatic_b180_44: fit=50.5s, trees=177
+additional all_automatic_b180_42: fit=97.8s, trees=180
+additional all_automatic_b180_43: fit=125.6s, trees=180
+additional all_automatic_b180_44: fit=132.0s, trees=180
+additional manual_b450_42: fit=0.0s, trees=450
+additional manual_b450_43: fit=0.0s, trees=450
+additional manual_b450_44: fit=0.0s, trees=449
+additional automatic_b450_42: fit=0.0s, trees=449
+additional automatic_b450_43: fit=0.0s, trees=450
+additional automatic_b450_44: fit=0.0s, trees=445
+additional all_automatic_b450_42: fit=0.0s, trees=449
+additional all_automatic_b450_43: fit=423.1s, trees=450
+additional all_automatic_b450_44: fit=507.5s, trees=448
+ period       variant  budget  ndcg@10
+ search        manual     180 0.497055
+confirm        manual     180 0.483215
+ search     automatic     180 0.508357
+confirm     automatic     180 0.500077
+ search all_automatic     180 0.515415
+confirm all_automatic     180 0.510257
+ search        manual     450 0.504972
+confirm        manual     450 0.490352
+ search     automatic     450 0.515254
+confirm     automatic     450 0.503714
+ search all_automatic     450 0.523512
+confirm all_automatic     450 0.516211
+Additional catalog 2021-08-16: 169,590 candidates
+Additional catalog 2021-08-17: 184,516 candidates
+Additional catalog 2021-08-18: 199,360 candidates
+Additional catalog 2021-08-19: 236,007 candidates
+Additional catalog 2021-08-20: 244,213 candidates
+Additional catalog 2021-08-21: 215,944 candidates
+Additional catalog 2021-08-22: 252,792 candidates
+Additional experiments complete; original primary artifacts preserved.

@@ -1,0 +1,4 @@
+{
+  "purpose": "Reference measurements are included; tensor caches, model weights and raw data must be regenerated.",
+  "folders": ["main", "additional", "replication", "independent"]
+}

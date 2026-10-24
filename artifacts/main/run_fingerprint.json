@@ -1,0 +1,47 @@
+{
+  "config": {
+    "data_dir": "data/processed",
+    "output_dir": "artifacts/main",
+    "train_days": 28,
+    "search_days": 7,
+    "confirmation_days": 7,
+    "test_days": 7,
+    "train_negatives": 50,
+    "eval_negatives": 50,
+    "uniform_fraction": 0.5,
+    "candidate_seed": 107,
+    "model_seeds": [
+      42,
+      43,
+      44
+    ],
+    "iterations": 450,
+    "search_iterations": 180,
+    "learning_rate": 0.08,
+    "threads": 6,
+    "bootstrap_reps": 2000,
+    "full_catalog_queries": 210,
+    "grid": [
+      {
+        "depth": 6,
+        "l2_leaf_reg": 3
+      },
+      {
+        "depth": 6,
+        "l2_leaf_reg": 10
+      },
+      {
+        "depth": 8,
+        "l2_leaf_reg": 10
+      }
+    ],
+    "max_auto_groups": 3,
+    "min_search_gain": 0.0005
+  },
+  "files": {
+    "artifacts/main/cache/train.parquet": "e3a836bcbc93564ef3212b112ea59a041e0253107dd0147318621bb4e625d5a9",
+    "artifacts/main/cache/search.parquet": "ae5f4158b7121587ec77bb68ac3615b39275326fe6e35e864bf43978192130a8",
+    "artifacts/main/feature_registry.json": "df2ff7c6303015e666b8561fc942066afed4db8ef63e45340622fc95eb48b451",
+    "recsys/features.py": "f34eeeac5fa7cf67223374c938ee2866e8ab47ad028fddd0a5e5ca8178347f00"
+  }
+}

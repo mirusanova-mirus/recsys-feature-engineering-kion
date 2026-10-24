@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "original sealed hashes unchanged",
+    "18 factorial cells and exact model hashes",
+    "three matching seeds and training caps",
+    "same feature sets, depth, regularization and SkipTest",
+    "original bank seed42 predictions unchanged",
+    "three-seed ensembles recomputed",
+    "bootstrap recomputed",
+    "budget interaction recomputed",
+    "nonoverlapping temporal test weeks",
+    "same complete user histories",
+    "replication parameters frozen",
+    "replication audit passed",
+    "identical original catalog query subset and reference metrics"
+  ]
+}

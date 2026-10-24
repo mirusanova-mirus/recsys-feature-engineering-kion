@@ -1,0 +1,1033 @@
+{
+  "grammar": [
+    {
+      "name": "user__count__7d",
+      "group": "manual",
+      "relation": "user",
+      "operation": "count",
+      "window_days": 7,
+      "half_life": null
+    },
+    {
+      "name": "item__count__7d",
+      "group": "manual",
+      "relation": "item",
+      "operation": "count",
+      "window_days": 7,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__count__7d",
+      "group": "manual",
+      "relation": "user_genre",
+      "operation": "count",
+      "window_days": 7,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__share__7d",
+      "group": "manual",
+      "relation": "user_genre",
+      "operation": "share",
+      "window_days": 7,
+      "half_life": null
+    },
+    {
+      "name": "user_country__count__7d",
+      "group": "manual",
+      "relation": "user_country",
+      "operation": "count",
+      "window_days": 7,
+      "half_life": null
+    },
+    {
+      "name": "user_country__share__7d",
+      "group": "manual",
+      "relation": "user_country",
+      "operation": "share",
+      "window_days": 7,
+      "half_life": null
+    },
+    {
+      "name": "user_director__count__7d",
+      "group": "manual",
+      "relation": "user_director",
+      "operation": "count",
+      "window_days": 7,
+      "half_life": null
+    },
+    {
+      "name": "user_director__share__7d",
+      "group": "manual",
+      "relation": "user_director",
+      "operation": "share",
+      "window_days": 7,
+      "half_life": null
+    },
+    {
+      "name": "user_type__count__7d",
+      "group": "manual",
+      "relation": "user_type",
+      "operation": "count",
+      "window_days": 7,
+      "half_life": null
+    },
+    {
+      "name": "user_type__share__7d",
+      "group": "manual",
+      "relation": "user_type",
+      "operation": "share",
+      "window_days": 7,
+      "half_life": null
+    },
+    {
+      "name": "user__count__30d",
+      "group": "manual",
+      "relation": "user",
+      "operation": "count",
+      "window_days": 30,
+      "half_life": null
+    },
+    {
+      "name": "item__count__30d",
+      "group": "manual",
+      "relation": "item",
+      "operation": "count",
+      "window_days": 30,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__count__30d",
+      "group": "manual",
+      "relation": "user_genre",
+      "operation": "count",
+      "window_days": 30,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__share__30d",
+      "group": "manual",
+      "relation": "user_genre",
+      "operation": "share",
+      "window_days": 30,
+      "half_life": null
+    },
+    {
+      "name": "user_country__count__30d",
+      "group": "manual",
+      "relation": "user_country",
+      "operation": "count",
+      "window_days": 30,
+      "half_life": null
+    },
+    {
+      "name": "user_country__share__30d",
+      "group": "manual",
+      "relation": "user_country",
+      "operation": "share",
+      "window_days": 30,
+      "half_life": null
+    },
+    {
+      "name": "user_director__count__30d",
+      "group": "manual",
+      "relation": "user_director",
+      "operation": "count",
+      "window_days": 30,
+      "half_life": null
+    },
+    {
+      "name": "user_director__share__30d",
+      "group": "manual",
+      "relation": "user_director",
+      "operation": "share",
+      "window_days": 30,
+      "half_life": null
+    },
+    {
+      "name": "user_type__count__30d",
+      "group": "manual",
+      "relation": "user_type",
+      "operation": "count",
+      "window_days": 30,
+      "half_life": null
+    },
+    {
+      "name": "user_type__share__30d",
+      "group": "manual",
+      "relation": "user_type",
+      "operation": "share",
+      "window_days": 30,
+      "half_life": null
+    },
+    {
+      "name": "user__count__0d",
+      "group": "manual",
+      "relation": "user",
+      "operation": "count",
+      "window_days": 0,
+      "half_life": null
+    },
+    {
+      "name": "item__count__0d",
+      "group": "manual",
+      "relation": "item",
+      "operation": "count",
+      "window_days": 0,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__count__0d",
+      "group": "manual",
+      "relation": "user_genre",
+      "operation": "count",
+      "window_days": 0,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__share__0d",
+      "group": "manual",
+      "relation": "user_genre",
+      "operation": "share",
+      "window_days": 0,
+      "half_life": null
+    },
+    {
+      "name": "user_country__count__0d",
+      "group": "manual",
+      "relation": "user_country",
+      "operation": "count",
+      "window_days": 0,
+      "half_life": null
+    },
+    {
+      "name": "user_country__share__0d",
+      "group": "manual",
+      "relation": "user_country",
+      "operation": "share",
+      "window_days": 0,
+      "half_life": null
+    },
+    {
+      "name": "user_director__count__0d",
+      "group": "manual",
+      "relation": "user_director",
+      "operation": "count",
+      "window_days": 0,
+      "half_life": null
+    },
+    {
+      "name": "user_director__share__0d",
+      "group": "manual",
+      "relation": "user_director",
+      "operation": "share",
+      "window_days": 0,
+      "half_life": null
+    },
+    {
+      "name": "user_type__count__0d",
+      "group": "manual",
+      "relation": "user_type",
+      "operation": "count",
+      "window_days": 0,
+      "half_life": null
+    },
+    {
+      "name": "user_type__share__0d",
+      "group": "manual",
+      "relation": "user_type",
+      "operation": "share",
+      "window_days": 0,
+      "half_life": null
+    },
+    {
+      "name": "user__count__1d",
+      "group": "window_1d",
+      "relation": "user",
+      "operation": "count",
+      "window_days": 1,
+      "half_life": null
+    },
+    {
+      "name": "item__count__1d",
+      "group": "window_1d",
+      "relation": "item",
+      "operation": "count",
+      "window_days": 1,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__count__1d",
+      "group": "window_1d",
+      "relation": "user_genre",
+      "operation": "count",
+      "window_days": 1,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__share__1d",
+      "group": "window_1d",
+      "relation": "user_genre",
+      "operation": "share",
+      "window_days": 1,
+      "half_life": null
+    },
+    {
+      "name": "user_country__count__1d",
+      "group": "window_1d",
+      "relation": "user_country",
+      "operation": "count",
+      "window_days": 1,
+      "half_life": null
+    },
+    {
+      "name": "user_country__share__1d",
+      "group": "window_1d",
+      "relation": "user_country",
+      "operation": "share",
+      "window_days": 1,
+      "half_life": null
+    },
+    {
+      "name": "user_director__count__1d",
+      "group": "window_1d",
+      "relation": "user_director",
+      "operation": "count",
+      "window_days": 1,
+      "half_life": null
+    },
+    {
+      "name": "user_director__share__1d",
+      "group": "window_1d",
+      "relation": "user_director",
+      "operation": "share",
+      "window_days": 1,
+      "half_life": null
+    },
+    {
+      "name": "user_type__count__1d",
+      "group": "window_1d",
+      "relation": "user_type",
+      "operation": "count",
+      "window_days": 1,
+      "half_life": null
+    },
+    {
+      "name": "user_type__share__1d",
+      "group": "window_1d",
+      "relation": "user_type",
+      "operation": "share",
+      "window_days": 1,
+      "half_life": null
+    },
+    {
+      "name": "user__count__3d",
+      "group": "window_3d",
+      "relation": "user",
+      "operation": "count",
+      "window_days": 3,
+      "half_life": null
+    },
+    {
+      "name": "item__count__3d",
+      "group": "window_3d",
+      "relation": "item",
+      "operation": "count",
+      "window_days": 3,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__count__3d",
+      "group": "window_3d",
+      "relation": "user_genre",
+      "operation": "count",
+      "window_days": 3,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__share__3d",
+      "group": "window_3d",
+      "relation": "user_genre",
+      "operation": "share",
+      "window_days": 3,
+      "half_life": null
+    },
+    {
+      "name": "user_country__count__3d",
+      "group": "window_3d",
+      "relation": "user_country",
+      "operation": "count",
+      "window_days": 3,
+      "half_life": null
+    },
+    {
+      "name": "user_country__share__3d",
+      "group": "window_3d",
+      "relation": "user_country",
+      "operation": "share",
+      "window_days": 3,
+      "half_life": null
+    },
+    {
+      "name": "user_director__count__3d",
+      "group": "window_3d",
+      "relation": "user_director",
+      "operation": "count",
+      "window_days": 3,
+      "half_life": null
+    },
+    {
+      "name": "user_director__share__3d",
+      "group": "window_3d",
+      "relation": "user_director",
+      "operation": "share",
+      "window_days": 3,
+      "half_life": null
+    },
+    {
+      "name": "user_type__count__3d",
+      "group": "window_3d",
+      "relation": "user_type",
+      "operation": "count",
+      "window_days": 3,
+      "half_life": null
+    },
+    {
+      "name": "user_type__share__3d",
+      "group": "window_3d",
+      "relation": "user_type",
+      "operation": "share",
+      "window_days": 3,
+      "half_life": null
+    },
+    {
+      "name": "user__count__10d",
+      "group": "window_10d",
+      "relation": "user",
+      "operation": "count",
+      "window_days": 10,
+      "half_life": null
+    },
+    {
+      "name": "item__count__10d",
+      "group": "window_10d",
+      "relation": "item",
+      "operation": "count",
+      "window_days": 10,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__count__10d",
+      "group": "window_10d",
+      "relation": "user_genre",
+      "operation": "count",
+      "window_days": 10,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__share__10d",
+      "group": "window_10d",
+      "relation": "user_genre",
+      "operation": "share",
+      "window_days": 10,
+      "half_life": null
+    },
+    {
+      "name": "user_country__count__10d",
+      "group": "window_10d",
+      "relation": "user_country",
+      "operation": "count",
+      "window_days": 10,
+      "half_life": null
+    },
+    {
+      "name": "user_country__share__10d",
+      "group": "window_10d",
+      "relation": "user_country",
+      "operation": "share",
+      "window_days": 10,
+      "half_life": null
+    },
+    {
+      "name": "user_director__count__10d",
+      "group": "window_10d",
+      "relation": "user_director",
+      "operation": "count",
+      "window_days": 10,
+      "half_life": null
+    },
+    {
+      "name": "user_director__share__10d",
+      "group": "window_10d",
+      "relation": "user_director",
+      "operation": "share",
+      "window_days": 10,
+      "half_life": null
+    },
+    {
+      "name": "user_type__count__10d",
+      "group": "window_10d",
+      "relation": "user_type",
+      "operation": "count",
+      "window_days": 10,
+      "half_life": null
+    },
+    {
+      "name": "user_type__share__10d",
+      "group": "window_10d",
+      "relation": "user_type",
+      "operation": "share",
+      "window_days": 10,
+      "half_life": null
+    },
+    {
+      "name": "user__count__14d",
+      "group": "window_14d",
+      "relation": "user",
+      "operation": "count",
+      "window_days": 14,
+      "half_life": null
+    },
+    {
+      "name": "item__count__14d",
+      "group": "window_14d",
+      "relation": "item",
+      "operation": "count",
+      "window_days": 14,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__count__14d",
+      "group": "window_14d",
+      "relation": "user_genre",
+      "operation": "count",
+      "window_days": 14,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__share__14d",
+      "group": "window_14d",
+      "relation": "user_genre",
+      "operation": "share",
+      "window_days": 14,
+      "half_life": null
+    },
+    {
+      "name": "user_country__count__14d",
+      "group": "window_14d",
+      "relation": "user_country",
+      "operation": "count",
+      "window_days": 14,
+      "half_life": null
+    },
+    {
+      "name": "user_country__share__14d",
+      "group": "window_14d",
+      "relation": "user_country",
+      "operation": "share",
+      "window_days": 14,
+      "half_life": null
+    },
+    {
+      "name": "user_director__count__14d",
+      "group": "window_14d",
+      "relation": "user_director",
+      "operation": "count",
+      "window_days": 14,
+      "half_life": null
+    },
+    {
+      "name": "user_director__share__14d",
+      "group": "window_14d",
+      "relation": "user_director",
+      "operation": "share",
+      "window_days": 14,
+      "half_life": null
+    },
+    {
+      "name": "user_type__count__14d",
+      "group": "window_14d",
+      "relation": "user_type",
+      "operation": "count",
+      "window_days": 14,
+      "half_life": null
+    },
+    {
+      "name": "user_type__share__14d",
+      "group": "window_14d",
+      "relation": "user_type",
+      "operation": "share",
+      "window_days": 14,
+      "half_life": null
+    },
+    {
+      "name": "user__count__60d",
+      "group": "window_60d",
+      "relation": "user",
+      "operation": "count",
+      "window_days": 60,
+      "half_life": null
+    },
+    {
+      "name": "item__count__60d",
+      "group": "window_60d",
+      "relation": "item",
+      "operation": "count",
+      "window_days": 60,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__count__60d",
+      "group": "window_60d",
+      "relation": "user_genre",
+      "operation": "count",
+      "window_days": 60,
+      "half_life": null
+    },
+    {
+      "name": "user_genre__share__60d",
+      "group": "window_60d",
+      "relation": "user_genre",
+      "operation": "share",
+      "window_days": 60,
+      "half_life": null
+    },
+    {
+      "name": "user_country__count__60d",
+      "group": "window_60d",
+      "relation": "user_country",
+      "operation": "count",
+      "window_days": 60,
+      "half_life": null
+    },
+    {
+      "name": "user_country__share__60d",
+      "group": "window_60d",
+      "relation": "user_country",
+      "operation": "share",
+      "window_days": 60,
+      "half_life": null
+    },
+    {
+      "name": "user_director__count__60d",
+      "group": "window_60d",
+      "relation": "user_director",
+      "operation": "count",
+      "window_days": 60,
+      "half_life": null
+    },
+    {
+      "name": "user_director__share__60d",
+      "group": "window_60d",
+      "relation": "user_director",
+      "operation": "share",
+      "window_days": 60,
+      "half_life": null
+    },
+    {
+      "name": "user_type__count__60d",
+      "group": "window_60d",
+      "relation": "user_type",
+      "operation": "count",
+      "window_days": 60,
+      "half_life": null
+    },
+    {
+      "name": "user_type__share__60d",
+      "group": "window_60d",
+      "relation": "user_type",
+      "operation": "share",
+      "window_days": 60,
+      "half_life": null
+    },
+    {
+      "name": "user__ewm__h2",
+      "group": "decay_2d",
+      "relation": "user",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 2
+    },
+    {
+      "name": "item__ewm__h2",
+      "group": "decay_2d",
+      "relation": "item",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 2
+    },
+    {
+      "name": "user_genre__ewm__h2",
+      "group": "decay_2d",
+      "relation": "user_genre",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 2
+    },
+    {
+      "name": "user_country__ewm__h2",
+      "group": "decay_2d",
+      "relation": "user_country",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 2
+    },
+    {
+      "name": "user_director__ewm__h2",
+      "group": "decay_2d",
+      "relation": "user_director",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 2
+    },
+    {
+      "name": "user_type__ewm__h2",
+      "group": "decay_2d",
+      "relation": "user_type",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 2
+    },
+    {
+      "name": "user__ewm__h10",
+      "group": "decay_10d",
+      "relation": "user",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 10
+    },
+    {
+      "name": "item__ewm__h10",
+      "group": "decay_10d",
+      "relation": "item",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 10
+    },
+    {
+      "name": "user_genre__ewm__h10",
+      "group": "decay_10d",
+      "relation": "user_genre",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 10
+    },
+    {
+      "name": "user_country__ewm__h10",
+      "group": "decay_10d",
+      "relation": "user_country",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 10
+    },
+    {
+      "name": "user_director__ewm__h10",
+      "group": "decay_10d",
+      "relation": "user_director",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 10
+    },
+    {
+      "name": "user_type__ewm__h10",
+      "group": "decay_10d",
+      "relation": "user_type",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 10
+    },
+    {
+      "name": "user__ewm__h30",
+      "group": "decay_30d",
+      "relation": "user",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 30
+    },
+    {
+      "name": "item__ewm__h30",
+      "group": "decay_30d",
+      "relation": "item",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 30
+    },
+    {
+      "name": "user_genre__ewm__h30",
+      "group": "decay_30d",
+      "relation": "user_genre",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 30
+    },
+    {
+      "name": "user_country__ewm__h30",
+      "group": "decay_30d",
+      "relation": "user_country",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 30
+    },
+    {
+      "name": "user_director__ewm__h30",
+      "group": "decay_30d",
+      "relation": "user_director",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 30
+    },
+    {
+      "name": "user_type__ewm__h30",
+      "group": "decay_30d",
+      "relation": "user_type",
+      "operation": "ewm",
+      "window_days": null,
+      "half_life": 30
+    },
+    {
+      "name": "segment_item__count__7d",
+      "group": "segment",
+      "relation": "segment_item",
+      "operation": "count",
+      "window_days": 7,
+      "half_life": null
+    },
+    {
+      "name": "segment_item__count__30d",
+      "group": "segment",
+      "relation": "segment_item",
+      "operation": "count",
+      "window_days": 30,
+      "half_life": null
+    },
+    {
+      "name": "segment_item__count__0d",
+      "group": "segment",
+      "relation": "segment_item",
+      "operation": "count",
+      "window_days": 0,
+      "half_life": null
+    }
+  ],
+  "groups": {
+    "static": [
+      "sex",
+      "age",
+      "income",
+      "kids_flg",
+      "content_type",
+      "genre",
+      "country",
+      "director",
+      "age_rating",
+      "for_kids",
+      "item_id",
+      "release_year",
+      "weekday"
+    ],
+    "manual": [
+      "user__count__7d",
+      "item__count__7d",
+      "user_genre__count__7d",
+      "user_genre__share__7d",
+      "user_country__count__7d",
+      "user_country__share__7d",
+      "user_director__count__7d",
+      "user_director__share__7d",
+      "user_type__count__7d",
+      "user_type__share__7d",
+      "user__count__30d",
+      "item__count__30d",
+      "user_genre__count__30d",
+      "user_genre__share__30d",
+      "user_country__count__30d",
+      "user_country__share__30d",
+      "user_director__count__30d",
+      "user_director__share__30d",
+      "user_type__count__30d",
+      "user_type__share__30d",
+      "user__count__0d",
+      "item__count__0d",
+      "user_genre__count__0d",
+      "user_genre__share__0d",
+      "user_country__count__0d",
+      "user_country__share__0d",
+      "user_director__count__0d",
+      "user_director__share__0d",
+      "user_type__count__0d",
+      "user_type__share__0d"
+    ],
+    "recency": [
+      "user_recency",
+      "item_recency",
+      "pair_count",
+      "user_span",
+      "user_unique_items"
+    ],
+    "trends": [
+      "user__trend_7_30",
+      "item__trend_7_30",
+      "user_genre__trend_7_30",
+      "user_country__trend_7_30",
+      "user_director__trend_7_30",
+      "user_type__trend_7_30"
+    ],
+    "multigenre": [
+      "genre_overlap_last",
+      "genre_affinity_mean",
+      "genre_affinity_max"
+    ],
+    "window_1d": [
+      "user__count__1d",
+      "item__count__1d",
+      "user_genre__count__1d",
+      "user_genre__share__1d",
+      "user_country__count__1d",
+      "user_country__share__1d",
+      "user_director__count__1d",
+      "user_director__share__1d",
+      "user_type__count__1d",
+      "user_type__share__1d"
+    ],
+    "window_3d": [
+      "user__count__3d",
+      "item__count__3d",
+      "user_genre__count__3d",
+      "user_genre__share__3d",
+      "user_country__count__3d",
+      "user_country__share__3d",
+      "user_director__count__3d",
+      "user_director__share__3d",
+      "user_type__count__3d",
+      "user_type__share__3d"
+    ],
+    "window_10d": [
+      "user__count__10d",
+      "item__count__10d",
+      "user_genre__count__10d",
+      "user_genre__share__10d",
+      "user_country__count__10d",
+      "user_country__share__10d",
+      "user_director__count__10d",
+      "user_director__share__10d",
+      "user_type__count__10d",
+      "user_type__share__10d"
+    ],
+    "window_14d": [
+      "user__count__14d",
+      "item__count__14d",
+      "user_genre__count__14d",
+      "user_genre__share__14d",
+      "user_country__count__14d",
+      "user_country__share__14d",
+      "user_director__count__14d",
+      "user_director__share__14d",
+      "user_type__count__14d",
+      "user_type__share__14d"
+    ],
+    "window_60d": [
+      "user__count__60d",
+      "item__count__60d",
+      "user_genre__count__60d",
+      "user_genre__share__60d",
+      "user_country__count__60d",
+      "user_country__share__60d",
+      "user_director__count__60d",
+      "user_director__share__60d",
+      "user_type__count__60d",
+      "user_type__share__60d"
+    ],
+    "decay_2d": [
+      "user__ewm__h2",
+      "item__ewm__h2",
+      "user_genre__ewm__h2",
+      "user_country__ewm__h2",
+      "user_director__ewm__h2",
+      "user_type__ewm__h2"
+    ],
+    "decay_10d": [
+      "user__ewm__h10",
+      "item__ewm__h10",
+      "user_genre__ewm__h10",
+      "user_country__ewm__h10",
+      "user_director__ewm__h10",
+      "user_type__ewm__h10"
+    ],
+    "decay_30d": [
+      "user__ewm__h30",
+      "item__ewm__h30",
+      "user_genre__ewm__h30",
+      "user_country__ewm__h30",
+      "user_director__ewm__h30",
+      "user_type__ewm__h30"
+    ],
+    "segment": [
+      "segment_item__count__7d",
+      "segment_item__count__30d",
+      "segment_item__count__0d"
+    ]
+  },
+  "baseline": [
+    "sex",
+    "age",
+    "income",
+    "kids_flg",
+    "content_type",
+    "genre",
+    "country",
+    "director",
+    "age_rating",
+    "for_kids",
+    "item_id",
+    "release_year",
+    "weekday",
+    "user__count__7d",
+    "item__count__7d",
+    "user_genre__count__7d",
+    "user_genre__share__7d",
+    "user_country__count__7d",
+    "user_country__share__7d",
+    "user_director__count__7d",
+    "user_director__share__7d",
+    "user_type__count__7d",
+    "user_type__share__7d",
+    "user__count__30d",
+    "item__count__30d",
+    "user_genre__count__30d",
+    "user_genre__share__30d",
+    "user_country__count__30d",
+    "user_country__share__30d",
+    "user_director__count__30d",
+    "user_director__share__30d",
+    "user_type__count__30d",
+    "user_type__share__30d",
+    "user__count__0d",
+    "item__count__0d",
+    "user_genre__count__0d",
+    "user_genre__share__0d",
+    "user_country__count__0d",
+    "user_country__share__0d",
+    "user_director__count__0d",
+    "user_director__share__0d",
+    "user_type__count__0d",
+    "user_type__share__0d",
+    "user_recency",
+    "item_recency",
+    "pair_count",
+    "user_span",
+    "user_unique_items"
+  ],
+  "categorical": [
+    "sex",
+    "age",
+    "income",
+    "kids_flg",
+    "content_type",
+    "genre",
+    "country",
+    "director",
+    "age_rating",
+    "for_kids",
+    "item_id"
+  ]
+}

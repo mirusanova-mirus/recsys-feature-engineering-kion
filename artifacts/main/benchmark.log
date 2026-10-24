@@ -1,0 +1,7 @@
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/voltrondata/github-actions-runner/_work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+{'sample_users': 1000, 'complete_history_rows': 5617, 'past_rows': 4371, 'queries': 34, 'candidate_rows': 1745, 'features': 128, 'candidate_seconds': 0.01858462500000002, 'feature_seconds': 0.13443754200000002, 'frame_mib': 2.222733497619629}
+{'sample_users': 10000, 'complete_history_rows': 56605, 'past_rows': 42765, 'queries': 347, 'candidate_rows': 17912, 'features': 128, 'candidate_seconds': 0.1919369999999999, 'feature_seconds': 0.5266593750000002, 'frame_mib': 22.81606960296631}
+{'sample_users': 30000, 'complete_history_rows': 169946, 'past_rows': 128334, 'queries': 1082, 'candidate_rows': 55860, 'features': 128, 'candidate_seconds': 0.6043790830000002, 'feature_seconds': 1.353022541, 'frame_mib': 71.18256664276123}
