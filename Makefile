@@ -5,7 +5,7 @@ CONFIG ?= configs/main.json
 .PHONY: reproduce prepare-reference download features train catalog benchmark additional-plan additional replication independent report pdf test validate bundle
 reproduce: prepare-reference download features train catalog benchmark
 	$(PYTHON) -m recsys.additional --seal-only --renew-plan
-	$(MAKE) additional replication independent test validate report pdf bundle PYTHON=$(PYTHON)
+	$(MAKE) additional replication independent test validate report bundle PYTHON=$(PYTHON)
 
 prepare-reference:
 	$(PYTHON) tools/prepare_reference_results.py
@@ -32,17 +32,21 @@ replication:
 independent:
 	$(PYTHON) -u -m recsys.independent --config configs/user_holdout.json
 report:
-	$(PYTHON) -u -m recsys.report --config $(CONFIG)
+	$(PYTHON) tools/run_generated.py --output README.md --output REPORT.md --output ADDITIONAL.md -- $(PYTHON) -u -m recsys.report --config $(CONFIG)
 pdf:
-	$(PYTHON) -u -m recsys.pdf_report --config $(CONFIG)
+	$(MAKE) latex
 test:
 	$(PYTHON) -m unittest discover -s tests -v
 validate:
 	$(PYTHON) -m recsys.validate --config $(CONFIG)
 	$(PYTHON) -m recsys.additional_validate
 	$(PYTHON) -m recsys.independent --audit-only
-bundle:
-	$(PYTHON) -m recsys.bundle --config $(CONFIG)
+check:
+	$(PYTHON) tools/check_submission.py
+bundle: check
+	$(PYTHON) tools/package_submission.py --output submission/recsys_kion.zip
+
+.PHONY: check
 
 .PHONY: latex
 latex:

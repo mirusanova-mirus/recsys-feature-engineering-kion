@@ -75,6 +75,78 @@
     "list": 3,
     "block_text": 12
   },
-  "editing": "The TeX sources are now independent; no experiment or report target overwrites them.",
-  "notes": "All main and additional research sections were preserved."
+  "editing": "Proofread in place on 2026-10-25, preserving the user reference template and numerical estimates",
+  "notes": "All main and additional research sections were preserved.",
+  "current_inputs": [
+    "sections/02-data",
+    "sections/03-protocol",
+    "sections/01-question",
+    "sections/04-baseline",
+    "sections/05-automatic-features",
+    "sections/06-results",
+    "sections/07-robustness",
+    "sections/10-additional-checks",
+    "sections/08-cost",
+    "sections/12-reproduction",
+    "sections/09-limitations",
+    "sections/11-conclusions"
+  ],
+  "current_headings": {
+    "sections/00-summary.tex": [],
+    "sections/01-question.tex": [
+      "Модели и поиск признаков"
+    ],
+    "sections/02-data.tex": [
+      "Данные и протокол"
+    ],
+    "sections/03-protocol.tex": [
+      "Разбиение и кандидаты"
+    ],
+    "sections/04-baseline.tex": [
+      "Ручной набор"
+    ],
+    "sections/05-automatic-features.tex": [
+      "Автоматический поиск"
+    ],
+    "sections/06-results.tex": [
+      "Основное сравнение"
+    ],
+    "sections/07-robustness.tex": [
+      "Чувствительность к выбору кандидатов"
+    ],
+    "sections/08-cost.tex": [
+      "Затраты и воспроизведение"
+    ],
+    "sections/09-limitations.tex": [
+      "Выводы и ограничения"
+    ],
+    "sections/10-additional-checks.tex": [
+      "Дополнительные проверки",
+      "Почему отбор уступил полному банку",
+      "Другой период и новые пользователи"
+    ],
+    "sections/11-conclusions.tex": [],
+    "sections/12-reproduction.tex": [],
+    "sections/body.tex": []
+  },
+  "current_markdown_sha256": "c38dd1c556b16e62cc6b627c536d849fb34a06944a683d9da0a1f0ba53315141",
+  "current_source_sha256": {
+    "main.tex": "f974bc5dcd38fea0dab6fd256d57177a1994496382de480752b3ef90381c0635",
+    "metadata.tex": "b1f67bcd1ebe83bc75676f19f72afb8cdea398253b21b0faeb06e6823d3544d2",
+    "preamble.tex": "25e541d21ee65a383e5a464852c52b42ad16ed0fbce4b891ec57d8032c1dc4e2",
+    "sections/00-summary.tex": "30ca1256819f94464377768c3cfd237aec810faf6bddf79d9291e7173e7a6a34",
+    "sections/01-question.tex": "1b1be442f52394fd7366522b7124326f6a43215798af078d162d29fef28ff417",
+    "sections/02-data.tex": "50ccdcb11516eeeea20bb64b5fcff9febc2b2f6c868fd8c6582365a94ff5b56d",
+    "sections/03-protocol.tex": "3fcbdae389b7df89818691d599bec21fb1591eca5fe9f745179b1f16ba2964f7",
+    "sections/04-baseline.tex": "92450d9cfd88968bd2c9a63e2e11007b57a3ff2dd13663cd17809e913c7004fb",
+    "sections/05-automatic-features.tex": "e11c2b46e02ce8fde7f04fc65a1973fa56f71a6592e84fcbca267752fec8b7b8",
+    "sections/06-results.tex": "6eeacb821fc08eaa01949042081bcdc47e1f07f26ca6e129faf35025c17a2568",
+    "sections/07-robustness.tex": "48495b99ac8a218f876448c981dc3bea9e1e44444b816ca9ab6e1185d91f30d8",
+    "sections/08-cost.tex": "ec69c7b9d75d19c44a9ad387fb1c9278f74fca489909cb4464e4bcdbe19cb52f",
+    "sections/09-limitations.tex": "fd2eab4efecb7034f8f516ec8636cd5276c3eefbe8544b18b71def8917b4000c",
+    "sections/10-additional-checks.tex": "08e72bd9b03084356e45bce652a3690807093f82daf8236bf4949c86269cd325",
+    "sections/11-conclusions.tex": "1b415424c2d301a9573075a502dd42be22d581ae8dd685541c19b6d330a03cad",
+    "sections/12-reproduction.tex": "4d4cb7ab28e88b5fd2fbe940b0265a61d2c805a8026d6ff776d3493e885ba0c9",
+    "sections/body.tex": "3fbf02270e7422f6d11e6c39e00c1f666cb8e066c739f32f34500ef6bae930de"
+  }
 }

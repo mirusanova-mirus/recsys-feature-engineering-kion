@@ -1,57 +1,56 @@
 {
-  "pdf": "report.pdf",
-  "pages": 19,
-  "pdf_sha256": "58e3b64856911883cfd1e046f5b87b9a0f41e1ca1946c5d9090533f0a2ab8be5",
-  "tex_source_sha256": {
-    "main.tex": "cc6cfe239d93b5257e4e18a13a2a89fcabd558745addb723de09d366f2cfee4c",
-    "metadata.tex": "d4b6e168a2aa6509885fafe354e1671ffb5eff28a1efa28a64f366e5fddd674f",
-    "preamble.tex": "77875058a495dd9b3e9a9cc777727374d0777f4e57b8fa9b6cf68a42598476fc",
-    "sections/00-summary.tex": "929621fec97342da581245f3568991d791a74b7bc1c7d85ef32e2ef53bde1b70",
-    "sections/01-question.tex": "21b5427f2d8048878a70a44c55db4fa5da2b006c6e332cb21ac4a72852f55d02",
-    "sections/02-data.tex": "692abae74cc66af178e8f1d77b2701c4f7acec695701dc0276b6ddb653a0ac69",
-    "sections/03-protocol.tex": "d32d08e6e350ae6ae0d5af9cbcc64c1a1c4cfbe0f6e1022fa219d0323aa4f78c",
-    "sections/04-baseline.tex": "0177e34d3988d00e6ed15b0f784ebead42ae3d5915aeab393283d6c6cf395d03",
-    "sections/05-automatic-features.tex": "17c84120b2f9021310d794719c5b34eac22b8212723092f96f82f8dffc3ca42f",
-    "sections/06-results.tex": "95d2f499c7374dc6a95807d0ebb55ca9624db9a353d2138c74ba7878f9b152b7",
-    "sections/07-robustness.tex": "9cfa14bd02c83976964001b9f8a271b17bf1a9052608a0794fa2a3f9af17fb25",
-    "sections/08-cost.tex": "32f949f3c0f83154279ead594aef2ef0b9c0a7d173f59d4f69395eb99ff76c3e",
-    "sections/09-limitations.tex": "5bf400f2e224fb1de0f66b34bfd0368d1df3afb6dd7efa172aa16bb8adb7f360",
-    "sections/10-additional-checks.tex": "ce49ea1f862d12e1d4b5c5b41783d01759c1eddc1b36c3c8ddfbacee93b8316e",
-    "sections/11-conclusions.tex": "89db216403aa33f7305c5f67f7a67afaa0026bb857facba4826af739a2c4c6c5",
-    "sections/12-reproduction.tex": "c0321a5abb19e3ef0384708df99d25c024bc592f2089d530e891f79ed97448c5",
-    "sections/body.tex": "28d0fbf8dc73269b65534305c1a1e52a3d3200a9c0f6eff95650d60cc5b6c5e8"
+  "date": "2026-10-25",
+  "edition": "Proofread report with clarified protocol, checked estimates and five-page layout",
+  "reference": "HW2_code_generation_report_Rusanova_Margarita.pdf",
+  "editor_compile": "success for final saved source, verified with the built-in compiler",
+  "source_sha256": {
+    "main.tex": "f974bc5dcd38fea0dab6fd256d57177a1994496382de480752b3ef90381c0635",
+    "metadata.tex": "b1f67bcd1ebe83bc75676f19f72afb8cdea398253b21b0faeb06e6823d3544d2",
+    "preamble.tex": "25e541d21ee65a383e5a464852c52b42ad16ed0fbce4b891ec57d8032c1dc4e2",
+    "sections/00-summary.tex": "30ca1256819f94464377768c3cfd237aec810faf6bddf79d9291e7173e7a6a34",
+    "sections/01-question.tex": "1b1be442f52394fd7366522b7124326f6a43215798af078d162d29fef28ff417",
+    "sections/02-data.tex": "50ccdcb11516eeeea20bb64b5fcff9febc2b2f6c868fd8c6582365a94ff5b56d",
+    "sections/03-protocol.tex": "3fcbdae389b7df89818691d599bec21fb1591eca5fe9f745179b1f16ba2964f7",
+    "sections/04-baseline.tex": "92450d9cfd88968bd2c9a63e2e11007b57a3ff2dd13663cd17809e913c7004fb",
+    "sections/05-automatic-features.tex": "e11c2b46e02ce8fde7f04fc65a1973fa56f71a6592e84fcbca267752fec8b7b8",
+    "sections/06-results.tex": "6eeacb821fc08eaa01949042081bcdc47e1f07f26ca6e129faf35025c17a2568",
+    "sections/07-robustness.tex": "48495b99ac8a218f876448c981dc3bea9e1e44444b816ca9ab6e1185d91f30d8",
+    "sections/08-cost.tex": "ec69c7b9d75d19c44a9ad387fb1c9278f74fca489909cb4464e4bcdbe19cb52f",
+    "sections/09-limitations.tex": "fd2eab4efecb7034f8f516ec8636cd5276c3eefbe8544b18b71def8917b4000c",
+    "sections/10-additional-checks.tex": "08e72bd9b03084356e45bce652a3690807093f82daf8236bf4949c86269cd325",
+    "sections/11-conclusions.tex": "1b415424c2d301a9573075a502dd42be22d581ae8dd685541c19b6d330a03cad",
+    "sections/12-reproduction.tex": "4d4cb7ab28e88b5fd2fbe940b0265a61d2c805a8026d6ff776d3493e885ba0c9",
+    "sections/body.tex": "3fbf02270e7422f6d11e6c39e00c1f666cb8e066c739f32f34500ef6bae930de"
   },
-  "compilers": {
-    "local": "pdfLaTeX / TeX Live 2026 / latexmk 4.88",
-    "codex_desktop": "success, final saved source"
+  "style_checks": {
+    "no_introductory_section": true,
+    "no_terminal_paragraph_full_stops": true,
+    "no_semicolons": true,
+    "no_long_dashes": true,
+    "compact_title_no_cover_or_contents": true
   },
-  "visual_review": {
-    "pages_inspected": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19
+  "previous_export": {
+    "path": "../provenance/previous_exports/latex-report.pdf",
+    "pages": 19,
+    "sha256": "58e3b64856911883cfd1e046f5b87b9a0f41e1ca1946c5d9090533f0a2ab8be5",
+    "edition": "previous export, retained unchanged",
+    "included_in_submission": false
+  },
+  "export_policy": "Current source compiled in the editor, previous PDFs preserved outside the submitted files",
+  "layout_check": {
+    "method": "XDV layout and SVG/PNG rendering, no separate PDF export",
+    "pages": 5,
+    "overfull_boxes": 0,
+    "visual_review": "All five pages checked after proofreading, with final commands kept unbroken"
+  },
+  "proofreading": {
+    "date": "2026-10-25",
+    "scope": "Russian prose, consistent terminology, query definition, ensemble distinction, paragraph boundaries and pagination",
+    "experimental_estimates_changed": false,
+    "added_clarifications": [
+      "Catalog coverage 12968/13224",
+      "Manual seed-42 NDCG@10 0.46929 from saved metrics"
     ],
-    "tables_figures_equations_and_cyrillic": "readable; no clipping or overlap",
-    "final_typography_changes_reinspected": true
-  },
-  "experiment_source_config_tests_unchanged_from_original_archive": 22,
-  "unit_tests_passed": 8,
-  "reference_preservation_check": "passed",
-  "checked_utc": "2026-10-24T19:55:56.820399+00:00"
+    "experiment_code_changed": false
+  }
 }

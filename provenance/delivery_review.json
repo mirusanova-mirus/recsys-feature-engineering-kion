@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-25",
+  "scope": "Repeated audits on the complete working copy with data and fitted weights, using identical experiment sources",
+  "experiment_sources_identical": [
+    "recsys/catalog.py",
+    "recsys/build.py",
+    "recsys/bundle.py",
+    "recsys/metrics.py",
+    "recsys/additional_validate.py",
+    "recsys/benchmark.py",
+    "recsys/additional.py",
+    "recsys/__init__.py",
+    "recsys/features.py",
+    "recsys/independent.py",
+    "recsys/pdf_report.py",
+    "recsys/experiment.py",
+    "recsys/validate.py",
+    "recsys/additional_report.py",
+    "recsys/candidates.py",
+    "recsys/report.py",
+    "recsys/data.py"
+  ],
+  "research_unit_tests_passed": 8,
+  "document_and_archive_tests_passed": 3,
+  "compact_check": "make check",
+  "full_audits": {
+    "primary": {
+      "passed": true,
+      "checks": [
+        "cache provenance",
+        "strict temporal history",
+        "nonoverlapping splits",
+        "no forbidden features",
+        "unique candidates",
+        "negative count",
+        "recomputed ensemble metrics",
+        "sealed audit checksum",
+        "full-catalog subset size",
+        "model feature names",
+        "SkipTest categorical counters",
+        "model seeds"
+      ]
+    },
+    "followup": {
+      "passed": true,
+      "checks": [
+        "original sealed hashes unchanged",
+        "18 factorial cells and exact model hashes",
+        "three matching seeds and training caps",
+        "same feature sets, depth, regularization and SkipTest",
+        "original bank seed42 predictions unchanged",
+        "three-seed ensembles recomputed",
+        "bootstrap recomputed",
+        "budget interaction recomputed",
+        "nonoverlapping temporal test weeks",
+        "same complete user histories",
+        "replication parameters frozen",
+        "replication audit passed",
+        "identical original catalog query subset and reference metrics"
+      ]
+    },
+    "independent_cohort": {
+      "passed": true,
+      "users": 5000,
+      "user_overlap_with_primary": 0,
+      "complete_histories_verified": true,
+      "uniform_user_sample_recomputed": true,
+      "events": 28907,
+      "selected_users_sha256": "55a0dd80205ac49c895bd91ac049719f2148dbcaf4cee773d88015a7e2e202b0",
+      "plan_created_utc": "2026-10-24T07:40:26.474801+00:00",
+      "scope": "Independent users within the same KION source; shared items/metadata and calendar mean this is not a new environment."
+    }
+  }
+}

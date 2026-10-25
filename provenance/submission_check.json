@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "scope": "Compact evidence and document checks, full data/model audit is a separate command",
+  "checks": [
+    "Markdown structure, punctuation and 42 local links",
+    "Active LaTeX sections, figures and writing style",
+    "KION seals, four saved audits and 22 recomputed ensemble tables"
+  ]
+}
