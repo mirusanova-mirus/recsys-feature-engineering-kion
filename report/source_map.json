@@ -129,7 +129,7 @@
     "sections/12-reproduction.tex": [],
     "sections/body.tex": []
   },
-  "current_markdown_sha256": "c38dd1c556b16e62cc6b627c536d849fb34a06944a683d9da0a1f0ba53315141",
+  "current_markdown_sha256": "7989f72e1cf3877e1fca8586c1e061366856da24318e092aeceb65a5d18df608",
   "current_source_sha256": {
     "main.tex": "f974bc5dcd38fea0dab6fd256d57177a1994496382de480752b3ef90381c0635",
     "metadata.tex": "b1f67bcd1ebe83bc75676f19f72afb8cdea398253b21b0faeb06e6823d3544d2",
@@ -137,9 +137,9 @@
     "sections/00-summary.tex": "30ca1256819f94464377768c3cfd237aec810faf6bddf79d9291e7173e7a6a34",
     "sections/01-question.tex": "1b1be442f52394fd7366522b7124326f6a43215798af078d162d29fef28ff417",
     "sections/02-data.tex": "50ccdcb11516eeeea20bb64b5fcff9febc2b2f6c868fd8c6582365a94ff5b56d",
-    "sections/03-protocol.tex": "3fcbdae389b7df89818691d599bec21fb1591eca5fe9f745179b1f16ba2964f7",
-    "sections/04-baseline.tex": "92450d9cfd88968bd2c9a63e2e11007b57a3ff2dd13663cd17809e913c7004fb",
-    "sections/05-automatic-features.tex": "e11c2b46e02ce8fde7f04fc65a1973fa56f71a6592e84fcbca267752fec8b7b8",
+    "sections/03-protocol.tex": "801d05132fd434dba19bc8c52b7279ef7e3446d8a52dd8340cb0c00b1470b721",
+    "sections/04-baseline.tex": "cbbdd6029bcb36ef1a511edf29818dc81a5805713ab7d484e8c77c7a6382d3fb",
+    "sections/05-automatic-features.tex": "248e8084e5688560b4dc6a051d16ae12f90c7ad7b593440d1f8d9f12418d2629",
     "sections/06-results.tex": "6eeacb821fc08eaa01949042081bcdc47e1f07f26ca6e129faf35025c17a2568",
     "sections/07-robustness.tex": "48495b99ac8a218f876448c981dc3bea9e1e44444b816ca9ab6e1185d91f30d8",
     "sections/08-cost.tex": "ec69c7b9d75d19c44a9ad387fb1c9278f74fca489909cb4464e4bcdbe19cb52f",
