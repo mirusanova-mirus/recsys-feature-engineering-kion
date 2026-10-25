@@ -44,6 +44,9 @@ def markdown():
         require(text.count("```") % 2 == 0, "Unclosed code fence: " + str(path))
         require(text.count("<details>") == text.count("</details>"), "Unclosed details: " + str(path))
         prose = re.sub(r"```.*?```", "", text, flags=re.S)
+        formulas = re.findall(r"^```math[^\n]*\n(.*?)^```[ \t]*$", text, flags=re.M | re.S)
+        formulas += re.findall(r"(?<!\$)\$(?!\$)([^\n$]+?)\$(?!\$)", prose)
+        require(all("<" not in formula for formula in formulas), "Use \\lt instead of a raw < in Markdown math: " + str(path))
         require(not any(c in prose for c in [";", "—", "–"]), "Document punctuation: " + str(path))
         require(not any(p.rstrip().endswith(".") for p in re.split(r"\n\s*\n", prose)), "Paragraph final dot: " + str(path))
         for _, target in re.findall(r"!?\[([^\]]*)\]\(([^\s)]+)\)", text):

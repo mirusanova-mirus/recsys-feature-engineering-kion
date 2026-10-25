@@ -74,5 +74,5 @@ Unit-тесты проверяют временные ограничения, к
 | [independent.py](recsys/independent.py) | Проверка на 5 000 новых пользователях |
 | [metrics.py](recsys/metrics.py) | Метрики и bootstrap по пользователям |
 
-Отчёт редактируется в [report/sections](report/sections/), оформление задано в [preamble.tex](report/preamble.tex).
+Отчёт в [report/sections](report/sections/), оформление задано в [preamble.tex](report/preamble.tex).
 Инструкция по сборке: [report/README.md](report/README.md)
